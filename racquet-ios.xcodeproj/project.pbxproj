@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64C0518A9FE684123BBF75F3 /* Pods_racquet_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DEDDE76121FEE2AE5C3614 /* Pods_racquet_iosTests.framework */; };
-		7237962A6DCF908C3A768594 /* Pods_racquet_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088581165E83B36C941C25A3 /* Pods_racquet_iosUITests.framework */; };
-		AE62B4A40350BF7FC5B1628A /* Pods_racquet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2DC5FC4C18B9D9DE81013B /* Pods_racquet_ios.framework */; };
+		5DA514C041D54C4E801286B4 /* Pods_racquet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61B6DBFB3AF0A229BBDE9DF /* Pods_racquet_ios.framework */; };
+		815D3FF9BB919C90083B0E03 /* Pods_racquet_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */; };
 		AE9CCA711C76CE4B001E1B0B /* view in Resources */ = {isa = PBXBuildFile; fileRef = AE9CCA701C76CE4B001E1B0B /* view */; };
+		DB90D8AD04ACFB8A746DC61B /* Pods_racquet_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7BFDA8CAA77D956AA027F0 /* Pods_racquet_iosUITests.framework */; };
 		DE99C1DB8AE57FDCB9AE0510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99C33EBC7C0639BC90B327 /* Assets.xcassets */; };
 		DE99C38CA2C2C54A72334040 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CA09445E79B14D95F914 /* ClubsViewController.swift */; };
 		DE99C599F4179A4E0CE73D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C579170AE386C85AA13D /* Main.storyboard */; };
@@ -42,14 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		088581165E83B36C941C25A3 /* Pods_racquet_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14B2FF8CF113C5AFD27471D5 /* Pods-racquet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.release.xcconfig"; sourceTree = "<group>"; };
-		1FD1E4D63135E40AB8584E51 /* Pods-racquet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		37919469E1CC0083AA77A4BF /* Pods-racquet-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosTests/Pods-racquet-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
-		52DEDDE76121FEE2AE5C3614 /* Pods_racquet_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9E2DC5FC4C18B9D9DE81013B /* Pods_racquet_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ADC6462F3D89A9A6257BBE6 /* Pods-racquet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		16D267F79786A975CBE6BDCA /* Pods-racquet-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosTests/Pods-racquet-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		33AB2556AFDA3A390FED2776 /* Pods-racquet-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D41C1996B0E1530862A814A /* Pods-racquet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.release.xcconfig"; sourceTree = "<group>"; };
 		AE9CCA701C76CE4B001E1B0B /* view */ = {isa = PBXFileReference; lastKnownFileType = folder; path = view; sourceTree = "<group>"; };
-		CC770DD15FFA8630165D2368 /* Pods-racquet-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE5733F56C698680DF51D60F /* Pods-racquet-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB7BFDA8CAA77D956AA027F0 /* Pods_racquet_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C0A0CB90790A6DCC9B05 /* racquet-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "racquet-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewController.swift; sourceTree = "<group>"; };
 		DE99C2F30E7C262A0E483F5C /* racquet_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racquet_iosUITests.swift; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 		DE99CAAC4540A61E3F2BB39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE99CCC0DD7A69C9B351B58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAA10BD88081DE2B58FA0FE8 /* Pods-racquet-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosTests/Pods-racquet-iosTests.release.xcconfig"; sourceTree = "<group>"; };
-		EB5A4D83C7A76565BD165DFF /* Pods-racquet-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5226F08D73FDEC68032885A /* Pods-racquet-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosTests/Pods-racquet-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F61B6DBFB3AF0A229BBDE9DF /* Pods_racquet_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7237962A6DCF908C3A768594 /* Pods_racquet_iosUITests.framework in Frameworks */,
+				DB90D8AD04ACFB8A746DC61B /* Pods_racquet_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE62B4A40350BF7FC5B1628A /* Pods_racquet_ios.framework in Frameworks */,
+				5DA514C041D54C4E801286B4 /* Pods_racquet_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,34 +89,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64C0518A9FE684123BBF75F3 /* Pods_racquet_iosTests.framework in Frameworks */,
+				815D3FF9BB919C90083B0E03 /* Pods_racquet_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D6EE7465F078E5DD39085F3 /* Pods */ = {
+		108AC05DFB0145FA60692EF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				37919469E1CC0083AA77A4BF /* Pods-racquet-iosTests.debug.xcconfig */,
-				EAA10BD88081DE2B58FA0FE8 /* Pods-racquet-iosTests.release.xcconfig */,
-				EB5A4D83C7A76565BD165DFF /* Pods-racquet-iosUITests.debug.xcconfig */,
-				CC770DD15FFA8630165D2368 /* Pods-racquet-iosUITests.release.xcconfig */,
-				1FD1E4D63135E40AB8584E51 /* Pods-racquet-ios.debug.xcconfig */,
-				14B2FF8CF113C5AFD27471D5 /* Pods-racquet-ios.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		573C98AD2E6ED768DD87D40B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52DEDDE76121FEE2AE5C3614 /* Pods_racquet_iosTests.framework */,
-				088581165E83B36C941C25A3 /* Pods_racquet_iosUITests.framework */,
-				9E2DC5FC4C18B9D9DE81013B /* Pods_racquet_ios.framework */,
+				F61B6DBFB3AF0A229BBDE9DF /* Pods_racquet_ios.framework */,
+				8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */,
+				DB7BFDA8CAA77D956AA027F0 /* Pods_racquet_iosUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5356F374F7E52C0362A2DA9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0ADC6462F3D89A9A6257BBE6 /* Pods-racquet-ios.debug.xcconfig */,
+				9D41C1996B0E1530862A814A /* Pods-racquet-ios.release.xcconfig */,
+				F5226F08D73FDEC68032885A /* Pods-racquet-iosTests.debug.xcconfig */,
+				16D267F79786A975CBE6BDCA /* Pods-racquet-iosTests.release.xcconfig */,
+				33AB2556AFDA3A390FED2776 /* Pods-racquet-iosUITests.debug.xcconfig */,
+				BE5733F56C698680DF51D60F /* Pods-racquet-iosUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		DE99C25F375C0686A52EB454 /* Products */ = {
@@ -145,8 +145,8 @@
 				DE99CC5446317C905694D6B7 /* racquet-ios */,
 				DE99CE3C995119C7AB26B0A9 /* racquet-iosTests */,
 				DE99C8B1F66932B5DEF4B059 /* racquet-iosUITests */,
-				3D6EE7465F078E5DD39085F3 /* Pods */,
-				573C98AD2E6ED768DD87D40B /* Frameworks */,
+				5356F374F7E52C0362A2DA9E /* Pods */,
+				108AC05DFB0145FA60692EF7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,11 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE99CE42554C6FB2DACB3A2F /* Build configuration list for PBXNativeTarget "racquet-iosUITests" */;
 			buildPhases = (
-				0D3B5AF3AE55ED830A8F7629 /* Check Pods Manifest.lock */,
+				C440104B8E64BD4C585A7F08 /* Check Pods Manifest.lock */,
 				DE99C29B32DBCD4829F8BA74 /* Sources */,
 				DE99C9313EDAB1C863F80229 /* Frameworks */,
 				DE99C30B316548AB016ABF14 /* Resources */,
-				BE9FD691FEA046B2A913945F /* Copy Pods Resources */,
+				651B2A154E8524839B998FFA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,12 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE99C206AC79273F4AC3D196 /* Build configuration list for PBXNativeTarget "racquet-iosTests" */;
 			buildPhases = (
-				C8AD4045EA347E167DC3BED4 /* Check Pods Manifest.lock */,
+				7DFC4442457E6E7D60E0DA08 /* Check Pods Manifest.lock */,
 				DE99C33C10E443CD713727A4 /* Sources */,
 				DE99CF383DBFC1CD598FDB4B /* Frameworks */,
 				DE99C56F4BA75F16F4735B97 /* Resources */,
-				E50CE4B8D1DD6CEC2E9410CB /* Embed Pods Frameworks */,
-				262DD42A0FD8F2C0B756D665 /* Copy Pods Resources */,
+				F14A3821730BC566FA1C9032 /* Embed Pods Frameworks */,
+				479F4102D2F5C00A694CB7C8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -222,12 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE99CF1D9FC3DE9A9AE2C189 /* Build configuration list for PBXNativeTarget "racquet-ios" */;
 			buildPhases = (
-				70B2C0DAE93F8B2B01FCD76F /* Check Pods Manifest.lock */,
+				97D45360D3D696C999E326FE /* Check Pods Manifest.lock */,
 				DE99C9E610C0610C59DC3132 /* Sources */,
 				DE99CA726061CA36CABFE780 /* Frameworks */,
 				DE99C606EFDF770C8D19F198 /* Resources */,
-				506A6C97DD924FEE5F4A7110 /* Embed Pods Frameworks */,
-				E4B457481AB003CA60219A70 /* Copy Pods Resources */,
+				1655D7D641565B391FBBC8DA /* Embed Pods Frameworks */,
+				5A351DCF11C54A0F942A66BA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,37 +297,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0D3B5AF3AE55ED830A8F7629 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		262DD42A0FD8F2C0B756D665 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-racquet-iosTests/Pods-racquet-iosTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		506A6C97DD924FEE5F4A7110 /* Embed Pods Frameworks */ = {
+		1655D7D641565B391FBBC8DA /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,22 +312,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		70B2C0DAE93F8B2B01FCD76F /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BE9FD691FEA046B2A913945F /* Copy Pods Resources */ = {
+		479F4102D2F5C00A694CB7C8 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,25 +324,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-racquet-iosTests/Pods-racquet-iosTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C8AD4045EA347E167DC3BED4 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		E4B457481AB003CA60219A70 /* Copy Pods Resources */ = {
+		5A351DCF11C54A0F942A66BA /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,7 +342,67 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E50CE4B8D1DD6CEC2E9410CB /* Embed Pods Frameworks */ = {
+		651B2A154E8524839B998FFA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DFC4442457E6E7D60E0DA08 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97D45360D3D696C999E326FE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C440104B8E64BD4C585A7F08 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F14A3821730BC566FA1C9032 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -476,7 +476,7 @@
 /* Begin XCBuildConfiguration section */
 		DE99C267B47018EA4B5FB91A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC770DD15FFA8630165D2368 /* Pods-racquet-iosUITests.release.xcconfig */;
+			baseConfigurationReference = BE5733F56C698680DF51D60F /* Pods-racquet-iosUITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/racquet-ios.app/racquet-ios";
 				INFOPLIST_FILE = "racquet-iosUITests/Info.plist";
@@ -570,7 +570,7 @@
 		};
 		DE99C932E3D3EE6C345F7588 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14B2FF8CF113C5AFD27471D5 /* Pods-racquet-ios.release.xcconfig */;
+			baseConfigurationReference = 9D41C1996B0E1530862A814A /* Pods-racquet-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "racquet-ios/Info.plist";
@@ -582,7 +582,7 @@
 		};
 		DE99C9DACB4633807A3DD1E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB5A4D83C7A76565BD165DFF /* Pods-racquet-iosUITests.debug.xcconfig */;
+			baseConfigurationReference = 33AB2556AFDA3A390FED2776 /* Pods-racquet-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/racquet-ios.app/racquet-ios";
 				INFOPLIST_FILE = "racquet-iosUITests/Info.plist";
@@ -595,7 +595,7 @@
 		};
 		DE99CBF30977886ED1D791E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37919469E1CC0083AA77A4BF /* Pods-racquet-iosTests.debug.xcconfig */;
+			baseConfigurationReference = F5226F08D73FDEC68032885A /* Pods-racquet-iosTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/racquet-ios.app/racquet-ios";
 				INFOPLIST_FILE = "racquet-iosTests/Info.plist";
@@ -608,7 +608,7 @@
 		};
 		DE99CEB431947DD833A96C69 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FD1E4D63135E40AB8584E51 /* Pods-racquet-ios.debug.xcconfig */;
+			baseConfigurationReference = 0ADC6462F3D89A9A6257BBE6 /* Pods-racquet-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "racquet-ios/Info.plist";
@@ -620,7 +620,7 @@
 		};
 		DE99CEF6149C3CD644E5173B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAA10BD88081DE2B58FA0FE8 /* Pods-racquet-iosTests.release.xcconfig */;
+			baseConfigurationReference = 16D267F79786A975CBE6BDCA /* Pods-racquet-iosTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/racquet-ios.app/racquet-ios";
 				INFOPLIST_FILE = "racquet-iosTests/Info.plist";

@@ -16,11 +16,11 @@
                         <viewControllerLayoutGuide type="bottom" id="PgL-eF-Aiw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ukT-uK-tXj">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gB-DC-9fI">
-                                <rect key="frame" x="0.0" y="20" width="320" height="150"/>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gB-DC-9fI">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mini-racquet" translatesAutoresizingMaskIntoConstraints="NO" id="Utd-yP-Hfg">
                                         <rect key="frame" x="110" y="25" width="100" height="100"/>
@@ -37,14 +37,17 @@
                                     <constraint firstItem="Utd-yP-Hfg" firstAttribute="centerX" secondItem="6gB-DC-9fI" secondAttribute="centerX" id="STo-TS-RRA"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Established Clubs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rao-c0-9Gk">
-                                <rect key="frame" x="92" y="180" width="137" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Established Clubs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rao-c0-9Gk">
+                                <rect key="frame" x="16" y="150" width="288" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="dUZ-xd-ky2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.4039215686" green="0.67450980390000004" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0yQ-jf-cas">
-                                <rect key="frame" x="0.0" y="220" width="320" height="348"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yQ-jf-cas">
+                                <rect key="frame" x="-4" y="185" width="328" height="319"/>
                                 <connections>
                                     <segue destination="28W-t5-qny" kind="embed" id="q9W-gV-afw"/>
                                 </connections>
@@ -52,30 +55,37 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6gB-DC-9fI" firstAttribute="top" secondItem="vzf-wu-u2J" secondAttribute="bottom" id="3eD-Zi-SvS"/>
                             <constraint firstItem="6gB-DC-9fI" firstAttribute="width" secondItem="ukT-uK-tXj" secondAttribute="width" id="8AY-7o-hQT"/>
-                            <constraint firstItem="6gB-DC-9fI" firstAttribute="top" secondItem="vzf-wu-u2J" secondAttribute="bottom" id="O7W-tU-qnB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rao-c0-9Gk" secondAttribute="trailing" id="92T-rU-ST0"/>
+                            <constraint firstItem="rao-c0-9Gk" firstAttribute="top" secondItem="6gB-DC-9fI" secondAttribute="bottom" id="96G-VZ-4O9"/>
+                            <constraint firstItem="PgL-eF-Aiw" firstAttribute="top" secondItem="0yQ-jf-cas" secondAttribute="bottom" id="OgX-56-H2Z"/>
                             <constraint firstItem="6gB-DC-9fI" firstAttribute="centerX" secondItem="ukT-uK-tXj" secondAttribute="centerX" id="Z1D-5e-DmN"/>
-                            <constraint firstItem="rao-c0-9Gk" firstAttribute="top" secondItem="6gB-DC-9fI" secondAttribute="bottom" constant="10" id="hvl-Aj-kFW"/>
-                            <constraint firstItem="rao-c0-9Gk" firstAttribute="centerX" secondItem="ukT-uK-tXj" secondAttribute="centerX" id="qdB-sG-Psh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0yQ-jf-cas" secondAttribute="trailing" constant="-20" id="cdk-HF-DRA"/>
+                            <constraint firstItem="rao-c0-9Gk" firstAttribute="leading" secondItem="ukT-uK-tXj" secondAttribute="leadingMargin" id="dVN-F7-wv1"/>
+                            <constraint firstItem="0yQ-jf-cas" firstAttribute="leading" secondItem="ukT-uK-tXj" secondAttribute="leadingMargin" constant="-20" id="kts-62-hfF"/>
+                            <constraint firstItem="PgL-eF-Aiw" firstAttribute="top" secondItem="0yQ-jf-cas" secondAttribute="bottom" id="nlg-Ff-LBh"/>
+                            <constraint firstItem="0yQ-jf-cas" firstAttribute="top" secondItem="rao-c0-9Gk" secondAttribute="bottom" id="pRz-2k-Tdd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="1W9-DO-JcP"/>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <navigationItem key="navigationItem" id="3g3-cp-t6r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ory-Hf-3L0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="722" y="255"/>
+            <point key="canvasLocation" x="728" y="255"/>
         </scene>
         <!--Club Collection View Controller-->
         <scene sceneID="Rk4-zO-JVG">
             <objects>
                 <collectionViewController id="28W-t5-qny" customClass="ClubCollectionViewController" customModule="racquet_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="iNL-D2-Q98">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="319"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.85490196078431369" green="0.92549019607843142" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="HMr-U7-9zJ">
                             <size key="itemSize" width="59" height="59"/>
-                            <size key="headerReferenceSize" width="0.0" height="1"/>
+                            <size key="headerReferenceSize" width="1" height="1"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
@@ -119,7 +129,7 @@
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8d9-gH-SMA">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <rect key="frame" x="0.0" y="0.0" width="328" height="1"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </collectionReusableView>
                         <connections>
@@ -141,7 +151,7 @@
                         <viewControllerLayoutGuide type="bottom" id="tfv-ez-cHK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tFY-x2-Iui">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="319"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -160,7 +170,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hA3-UC-Ukj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="htD-KQ-2uQ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="348"/>
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="319"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

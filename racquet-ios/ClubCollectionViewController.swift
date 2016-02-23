@@ -6,7 +6,7 @@ import Haneke
 class ClubCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     private let reuseIdentifier = "ClubViewCell"
-    private var clubs : SwiftyJSON.JSON = nil
+    private var clubs: SwiftyJSON.JSON = nil
 
 
     override func viewDidLoad() {
@@ -38,12 +38,8 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! ClubViewCell
         cell.backgroundColor = UIColor.whiteColor()
-//        cell.name.text = "Pivotal Labs Sydn3y"
-//        cell.name.textColor = UIColor.whiteColor()
-            print(clubs["clubs"][0]["logo"]["standard"]["url"].string!)
         cell.image.hnk_setImageFromURL(NSURL(string: clubs["clubs"][indexPath.row]["logo"]["standard"]["url"].string!)!, placeholder: UIImage(named: "mini-racquet"))
         cell.clubName.text = clubs["clubs"][indexPath.row]["name"].string!
-        // Configure the cell
         return cell
     }
 
@@ -55,9 +51,10 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         return 1
     }
 
+    let gridSize = 4;
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let width = (collectionView.frame.size.width - 2) / 3;
-        return CGSize(width: width, height: width)
+        let size = (collectionView.frame.size.width - CGFloat(gridSize - 1)) / CGFloat(gridSize);
+        return CGSize(width: size, height: size)
     }
 
 }
