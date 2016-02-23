@@ -6,8 +6,7 @@ import Haneke
 class ClubCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     private let reuseIdentifier = "ClubViewCell"
-    private var clubs: SwiftyJSON.JSON = nil
-
+    var clubs: SwiftyJSON.JSON = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,8 +14,7 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         populateDatur()
     }
 
-    func populateDatur() {
-        let service = RealRacquetRestService()
+    func populateDatur(service: RacquetRestService = RealRacquetRestService()) {
         service.getClubs(onGetClubs);
     }
 

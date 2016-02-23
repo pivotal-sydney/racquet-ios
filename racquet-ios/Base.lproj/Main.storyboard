@@ -10,7 +10,7 @@
         <!--Mini Racquet-->
         <scene sceneID="Oqp-a0-DmO">
             <objects>
-                <viewController title="Mini Racquet" id="Qp6-AM-Fqj" customClass="ClubsViewController" customModule="racquet_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Mini Racquet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qp6-AM-Fqj" customClass="ClubsViewController" customModule="racquet_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vzf-wu-u2J"/>
                         <viewControllerLayoutGuide type="bottom" id="PgL-eF-Aiw"/>
@@ -19,6 +19,21 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Established Clubs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rao-c0-9Gk">
+                                <rect key="frame" x="16" y="150" width="288" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="dUZ-xd-ky2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.4039215686" green="0.67450980390000004" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yQ-jf-cas">
+                                <rect key="frame" x="-4" y="185" width="328" height="319"/>
+                                <connections>
+                                    <segue destination="28W-t5-qny" kind="embed" id="q9W-gV-afw"/>
+                                </connections>
+                            </containerView>
                             <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gB-DC-9fI">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
                                 <subviews>
@@ -37,21 +52,6 @@
                                     <constraint firstItem="Utd-yP-Hfg" firstAttribute="centerX" secondItem="6gB-DC-9fI" secondAttribute="centerX" id="STo-TS-RRA"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Established Clubs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rao-c0-9Gk">
-                                <rect key="frame" x="16" y="150" width="288" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="dUZ-xd-ky2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.4039215686" green="0.67450980390000004" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </label>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yQ-jf-cas">
-                                <rect key="frame" x="-4" y="185" width="328" height="319"/>
-                                <connections>
-                                    <segue destination="28W-t5-qny" kind="embed" id="q9W-gV-afw"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -78,7 +78,7 @@
         <!--Club Collection View Controller-->
         <scene sceneID="Rk4-zO-JVG">
             <objects>
-                <collectionViewController id="28W-t5-qny" customClass="ClubCollectionViewController" customModule="racquet_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="ClubCollectionViewController" id="28W-t5-qny" customClass="ClubCollectionViewController" customModule="racquet_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="iNL-D2-Q98">
                         <rect key="frame" x="0.0" y="0.0" width="328" height="319"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
