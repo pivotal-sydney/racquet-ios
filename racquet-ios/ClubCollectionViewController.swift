@@ -17,14 +17,6 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
 
     func populateDatur() {
         Alamofire.request(.GET, "https://racquet-io.cfapps.io/api/clubs")
-//        .responseJSON { response in
-//            if let JSON = response.result.value {
-//                let dict = JSON as! Dictionary<String, AnyObject>
-//                debugPrint(dict["clubs"])
-//                self.clubs = dict["clubs"] as! [Dictionary<String, AnyObject>]
-//            }
-//            self.collectionView!.reloadData()
-//        }
         .responseJSON {
             response in
             guard response.result.error == nil else {
@@ -49,8 +41,8 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
 //        cell.name.text = "Pivotal Labs Sydn3y"
 //        cell.name.textColor = UIColor.whiteColor()
             print(clubs["clubs"][0]["logo"]["standard"]["url"].string!)
-        cell.image.hnk_setImageFromURL(NSURL(string: clubs["clubs"][0]["logo"]["standard"]["url"].string!)!, placeholder: UIImage(named: "mini-racquet"))
-
+        cell.image.hnk_setImageFromURL(NSURL(string: clubs["clubs"][indexPath.row]["logo"]["standard"]["url"].string!)!, placeholder: UIImage(named: "mini-racquet"))
+        cell.clubName.text = clubs["clubs"][indexPath.row]["name"].string!
         // Configure the cell
         return cell
     }
@@ -62,16 +54,5 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
-
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let width = collectionView.frame.size.width / 3
-        return CGSize(width: width, height: width)
-    }
-
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        // TODO: Fix this inset stuff.
-        return UIEdgeInsets(top: -10, left: -10, bottom: -10, right: -10)
-    }
-
 
 }

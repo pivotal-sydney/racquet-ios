@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Mini Racquet-->
@@ -71,32 +73,45 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.85490196078431369" green="0.92549019607843142" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HMr-U7-9zJ">
-                            <size key="itemSize" width="143" height="121.5"/>
+                            <size key="itemSize" width="97" height="97.5"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClubViewCell" id="b3U-o4-zaI" customClass="ClubViewCell" customModule="racquet_ios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="143" height="121.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="97" height="97.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="143" height="121.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="97" height="97.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4N-Td-TmP">
-                                            <rect key="frame" x="0.0" y="-1" width="143" height="121.5"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B4N-Td-TmP">
+                                            <rect key="frame" x="18" y="8" width="61" height="58"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="B4N-Td-TmP" secondAttribute="height" multiplier="109:103" id="gIa-lB-SUF"/>
+                                            </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="IUP-tV-rT7">
+                                            <rect key="frame" x="13" y="68.5" width="71" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="B4N-Td-TmP" firstAttribute="width" secondItem="b3U-o4-zaI" secondAttribute="width" id="fJ1-Rk-6g6"/>
-                                    <constraint firstItem="B4N-Td-TmP" firstAttribute="centerY" secondItem="b3U-o4-zaI" secondAttribute="centerY" id="fh0-iR-j5I"/>
-                                    <constraint firstItem="B4N-Td-TmP" firstAttribute="centerX" secondItem="b3U-o4-zaI" secondAttribute="centerX" id="s3y-Gn-eiI"/>
-                                    <constraint firstItem="B4N-Td-TmP" firstAttribute="height" secondItem="b3U-o4-zaI" secondAttribute="height" id="t0s-dp-s2D"/>
+                                    <constraint firstItem="IUP-tV-rT7" firstAttribute="centerX" secondItem="b3U-o4-zaI" secondAttribute="centerX" id="9S0-i8-n0m"/>
+                                    <constraint firstItem="B4N-Td-TmP" firstAttribute="leading" secondItem="b3U-o4-zaI" secondAttribute="leadingMargin" constant="10" id="OKJ-5N-eeh"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="B4N-Td-TmP" secondAttribute="trailing" constant="10" id="Wtv-WE-xnP"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="IUP-tV-rT7" secondAttribute="trailing" constant="5" id="aku-Y0-IHK"/>
+                                    <constraint firstItem="IUP-tV-rT7" firstAttribute="leading" secondItem="b3U-o4-zaI" secondAttribute="leadingMargin" constant="5" id="beP-Pi-sHC"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="IUP-tV-rT7" secondAttribute="bottom" id="n2Y-zI-mZh"/>
+                                    <constraint firstItem="B4N-Td-TmP" firstAttribute="top" secondItem="b3U-o4-zaI" secondAttribute="topMargin" id="rss-zQ-irT"/>
                                 </constraints>
                                 <connections>
+                                    <outlet property="clubName" destination="IUP-tV-rT7" id="HhV-wH-OiC"/>
                                     <outlet property="image" destination="B4N-Td-TmP" id="eae-r8-rB0"/>
                                 </connections>
                             </collectionViewCell>
