@@ -5,7 +5,6 @@ use_frameworks!
 target 'racquet-ios' do
   pod 'Alamofire', '~> 3.0'
   pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
-  pod 'Alamofire-SwiftyJSON', :podspec => 'https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire3-SwiftyJSON.podspec'
   pod 'HanekeSwift'
 end
 

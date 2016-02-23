@@ -1,6 +1,5 @@
 PODS:
   - Alamofire (3.2.0)
-  - Alamofire-SwiftyJSON (3.0.0)
   - HanekeSwift (0.10.1)
   - Nimble (3.0.0)
   - Quick (0.9.1)
@@ -8,34 +7,25 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
-  - Alamofire-SwiftyJSON (from `https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire3-SwiftyJSON.podspec`)
   - HanekeSwift
   - Nimble (= 3.0.0)
   - Quick (~> 0.9.0)
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
 EXTERNAL SOURCES:
-  Alamofire-SwiftyJSON:
-    :podspec: https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire3-SwiftyJSON.podspec
   SwiftyJSON:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 CHECKOUT OPTIONS:
-  Alamofire-SwiftyJSON:
-    :commit: 8cb1e134b28efef6d29a8f1682acbb850b7f8630
-    :git: https://github.com/jregnauld/Alamofire-SwiftyJSON.git
   SwiftyJSON:
     :commit: 42bdb102d2624b143c07850ebdc1537d5b6579b6
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
-  Alamofire-SwiftyJSON: 01127779f4bd2d4d5e7b41d8d37488efba0e6185
   HanekeSwift: 08e47d3d0f2899ec58e5d257beba0de619aca9e8
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   Quick: a5221fc21788b6aeda934805e68b061839bc3165
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 45a98a53ea7667fd092883c6b34d7ba220acf0d7
-
-COCOAPODS: 1.0.0.beta.3
+COCOAPODS: 0.39.0

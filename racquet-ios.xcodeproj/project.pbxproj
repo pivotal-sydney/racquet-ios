@@ -12,7 +12,7 @@
 		AE62B4A40350BF7FC5B1628A /* Pods_racquet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2DC5FC4C18B9D9DE81013B /* Pods_racquet_ios.framework */; };
 		AE9CCA711C76CE4B001E1B0B /* view in Resources */ = {isa = PBXBuildFile; fileRef = AE9CCA701C76CE4B001E1B0B /* view */; };
 		DE99C1DB8AE57FDCB9AE0510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99C33EBC7C0639BC90B327 /* Assets.xcassets */; };
-		DE99C38CA2C2C54A72334040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CA09445E79B14D95F914 /* ViewController.swift */; };
+		DE99C38CA2C2C54A72334040 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CA09445E79B14D95F914 /* ClubsViewController.swift */; };
 		DE99C599F4179A4E0CE73D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C579170AE386C85AA13D /* Main.storyboard */; };
 		DE99C7726E7EA8DB0656B215 /* ClubCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */; };
 		DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */; };
@@ -59,7 +59,7 @@
 		DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClubViewCell.swift; path = view/ClubViewCell.swift; sourceTree = "<group>"; };
 		DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racquet_iosTests.swift; sourceTree = "<group>"; };
 		DE99C9430B1C5BAD00BFD6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		DE99CA09445E79B14D95F914 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE99CA09445E79B14D95F914 /* ClubsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
 		DE99CA5B3F1BD7CFEC78AE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CAAC4540A61E3F2BB39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE99CCC0DD7A69C9B351B58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 				DE99C33EBC7C0639BC90B327 /* Assets.xcassets */,
 				DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */,
 				DE99C579170AE386C85AA13D /* Main.storyboard */,
-				DE99CA09445E79B14D95F914 /* ViewController.swift */,
+				DE99CA09445E79B14D95F914 /* ClubsViewController.swift */,
 				DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */,
 				DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */,
 			);
@@ -441,7 +441,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */,
-				DE99C38CA2C2C54A72334040 /* ViewController.swift in Sources */,
+				DE99C38CA2C2C54A72334040 /* ClubsViewController.swift in Sources */,
 				DE99CEA68457132C10A046C3 /* ClubViewCell.swift in Sources */,
 				DE99C7726E7EA8DB0656B215 /* ClubCollectionViewController.swift in Sources */,
 			);

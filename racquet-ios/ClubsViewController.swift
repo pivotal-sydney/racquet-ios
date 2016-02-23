@@ -10,7 +10,7 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class ClubsViewController: UIViewController {
 
 
     override func viewDidLoad() {
