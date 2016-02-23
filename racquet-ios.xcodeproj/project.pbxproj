@@ -22,6 +22,7 @@
 		DE99CB1BDC88B64017AB98D2 /* racquet_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */; };
 		DE99CB8299716771D5883E5C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99CCC0DD7A69C9B351B58F /* Info.plist */; };
 		DE99CBAD94808C2CDFAFF31D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99C9430B1C5BAD00BFD6C6 /* Info.plist */; };
+		DE99CBF1612398C6BF20E911 /* RacquetRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CE7479F72EB8A5177C2B /* RacquetRestService.swift */; };
 		DE99CD351A283EAC305C9FB3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99CA5B3F1BD7CFEC78AE64 /* Info.plist */; };
 		DE99CEA68457132C10A046C3 /* ClubViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		DE99CAAC4540A61E3F2BB39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE99CCC0DD7A69C9B351B58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE99CE7479F72EB8A5177C2B /* RacquetRestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RacquetRestService.swift; sourceTree = "<group>"; };
 		F5226F08D73FDEC68032885A /* Pods-racquet-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosTests/Pods-racquet-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F61B6DBFB3AF0A229BBDE9DF /* Pods_racquet_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 				DE99C579170AE386C85AA13D /* Main.storyboard */,
 				DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */,
 				DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */,
+				DE99CE7479F72EB8A5177C2B /* RacquetRestService.swift */,
 				AEFF00151C7C1336002485B0 /* ClubTabViewController.swift */,
 				AEFF00171C7C14A5002485B0 /* FeedViewController.swift */,
 				AEFF001B1C7C19E0002485B0 /* LeaderboardViewController.swift */,
@@ -454,6 +457,7 @@
 				AEFF00181C7C14A5002485B0 /* FeedViewController.swift in Sources */,
 				AEFF001C1C7C19E0002485B0 /* LeaderboardViewController.swift in Sources */,
 				DE99C7726E7EA8DB0656B215 /* ClubCollectionViewController.swift in Sources */,
+				DE99CBF1612398C6BF20E911 /* RacquetRestService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

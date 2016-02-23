@@ -16,23 +16,15 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
     }
 
     func populateDatur() {
-        Alamofire.request(.GET, "https://racquet-io.cfapps.io/api/clubs")
-        .responseJSON {
-            response in
-            guard response.result.error == nil else {
-                // got an error in getting the data, need to handle it
-                print("error calling GET on /posts/1")
-                print(response.result.error!)
-                return
-            }
-            if let value: AnyObject = response.result.value {
-                let responseObject = JSON(value)
-                debugPrint(responseObject)
-                self.clubs = responseObject
-            }
+        let service = RealRacquetRestService()
+        service.getClubs(onGetClubs);
+    }
+
+    func onGetClubs(response: SwiftyJSON.JSON?, success: Bool) {
+        if success {
+            self.clubs = response!
             self.collectionView!.reloadData()
         }
-
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
