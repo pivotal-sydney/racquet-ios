@@ -20,7 +20,7 @@
                             <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gB-DC-9fI">
                                 <rect key="frame" x="0.0" y="20" width="320" height="150"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mini_racquet.png" translatesAutoresizingMaskIntoConstraints="NO" id="Utd-yP-Hfg">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mini-racquet" translatesAutoresizingMaskIntoConstraints="NO" id="Utd-yP-Hfg">
                                         <rect key="frame" x="110" y="25" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="Kkl-s9-pww"/>
@@ -113,6 +113,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mini_racquet.png" width="400" height="400"/>
+        <image name="mini-racquet" width="400" height="400"/>
     </resources>
 </document>

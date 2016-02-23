@@ -11,8 +11,6 @@
 		7237962A6DCF908C3A768594 /* Pods_racquet_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 088581165E83B36C941C25A3 /* Pods_racquet_iosUITests.framework */; };
 		AE62B4A40350BF7FC5B1628A /* Pods_racquet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2DC5FC4C18B9D9DE81013B /* Pods_racquet_ios.framework */; };
 		AE9CCA711C76CE4B001E1B0B /* view in Resources */ = {isa = PBXBuildFile; fileRef = AE9CCA701C76CE4B001E1B0B /* view */; };
-		AE9CCA731C76CE5C001E1B0B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = AE9CCA721C76CE5C001E1B0B /* assets */; };
-		AEC53DFC1C76D6570078128F /* mini_racquet.png in Resources */ = {isa = PBXBuildFile; fileRef = AEC53DFB1C76D6570078128F /* mini_racquet.png */; };
 		DE99C1DB8AE57FDCB9AE0510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99C33EBC7C0639BC90B327 /* Assets.xcassets */; };
 		DE99C38CA2C2C54A72334040 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CA09445E79B14D95F914 /* ViewController.swift */; };
 		DE99C599F4179A4E0CE73D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C579170AE386C85AA13D /* Main.storyboard */; };
@@ -51,8 +49,6 @@
 		52DEDDE76121FEE2AE5C3614 /* Pods_racquet_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E2DC5FC4C18B9D9DE81013B /* Pods_racquet_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9CCA701C76CE4B001E1B0B /* view */ = {isa = PBXFileReference; lastKnownFileType = folder; path = view; sourceTree = "<group>"; };
-		AE9CCA721C76CE5C001E1B0B /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
-		AEC53DFB1C76D6570078128F /* mini_racquet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mini_racquet.png; path = ../../../AndroidStudioProjects/racquetandroid/app/src/main/res/drawable/mini_racquet.png; sourceTree = "<group>"; };
 		CC770DD15FFA8630165D2368 /* Pods-racquet-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DE99C0A0CB90790A6DCC9B05 /* racquet-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "racquet-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewController.swift; sourceTree = "<group>"; };
@@ -157,8 +153,6 @@
 		DE99CC5446317C905694D6B7 /* racquet-ios */ = {
 			isa = PBXGroup;
 			children = (
-				AEC53DFB1C76D6570078128F /* mini_racquet.png */,
-				AE9CCA721C76CE5C001E1B0B /* assets */,
 				AE9CCA701C76CE4B001E1B0B /* view */,
 				DE99C9430B1C5BAD00BFD6C6 /* Info.plist */,
 				DE99C33EBC7C0639BC90B327 /* Assets.xcassets */,
@@ -293,8 +287,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEC53DFC1C76D6570078128F /* mini_racquet.png in Resources */,
-				AE9CCA731C76CE5C001E1B0B /* assets in Resources */,
 				DE99CBAD94808C2CDFAFF31D /* Info.plist in Resources */,
 				DE99C1DB8AE57FDCB9AE0510 /* Assets.xcassets in Resources */,
 				DE99C599F4179A4E0CE73D13 /* Main.storyboard in Resources */,

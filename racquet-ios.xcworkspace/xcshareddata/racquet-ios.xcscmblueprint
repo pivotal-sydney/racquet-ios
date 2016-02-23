@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8137D462B93C0831F89C71E1E0F0039EDF5436D9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0C7E8DDD417E13D3DF507BCC1471E9A74F4CFE96" : 0,
+    "8137D462B93C0831F89C71E1E0F0039EDF5436D9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8C0082DD-12FF-44D4-9356-C295553C61D7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0C7E8DDD417E13D3DF507BCC1471E9A74F4CFE96" : "..\/AndroidStudioProjects\/racquetandroid",
+    "8137D462B93C0831F89C71E1E0F0039EDF5436D9" : "racquet-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "racquet-ios",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "racquet-ios.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:pivotal-sydney\/racquet-android.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0C7E8DDD417E13D3DF507BCC1471E9A74F4CFE96"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:pivotal-sydney\/racquet-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8137D462B93C0831F89C71E1E0F0039EDF5436D9"
+    }
+  ]
+}

@@ -49,7 +49,7 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
 //        cell.name.text = "Pivotal Labs Sydn3y"
 //        cell.name.textColor = UIColor.whiteColor()
             print(clubs["clubs"][0]["logo"]["standard"]["url"].string!)
-        cell.image.hnk_setImageFromURL(NSURL(string: clubs["clubs"][0]["logo"]["standard"]["url"].string!)!, placeholder: UIImage(named: "mini_racquet.png"))
+        cell.image.hnk_setImageFromURL(NSURL(string: clubs["clubs"][0]["logo"]["standard"]["url"].string!)!, placeholder: UIImage(named: "mini-racquet"))
 
         // Configure the cell
         return cell
