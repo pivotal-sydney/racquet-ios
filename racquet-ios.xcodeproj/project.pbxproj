@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5DA514C041D54C4E801286B4 /* Pods_racquet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61B6DBFB3AF0A229BBDE9DF /* Pods_racquet_ios.framework */; };
 		815D3FF9BB919C90083B0E03 /* Pods_racquet_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */; };
+		AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */; };
 		AE9CCA711C76CE4B001E1B0B /* view in Resources */ = {isa = PBXBuildFile; fileRef = AE9CCA701C76CE4B001E1B0B /* view */; };
 		DB90D8AD04ACFB8A746DC61B /* Pods_racquet_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7BFDA8CAA77D956AA027F0 /* Pods_racquet_iosUITests.framework */; };
 		DE99C1DB8AE57FDCB9AE0510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99C33EBC7C0639BC90B327 /* Assets.xcassets */; };
@@ -21,7 +22,6 @@
 		DE99CBAD94808C2CDFAFF31D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99C9430B1C5BAD00BFD6C6 /* Info.plist */; };
 		DE99CD351A283EAC305C9FB3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99CA5B3F1BD7CFEC78AE64 /* Info.plist */; };
 		DE99CEA68457132C10A046C3 /* ClubViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */; };
-		DE99CEF6620B5C36F694E7B0 /* racquet_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C2F30E7C262A0E483F5C /* racquet_iosUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +47,7 @@
 		33AB2556AFDA3A390FED2776 /* Pods-racquet-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D41C1996B0E1530862A814A /* Pods-racquet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.release.xcconfig"; sourceTree = "<group>"; };
+		AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewControllerSpec.swift; sourceTree = "<group>"; };
 		AE9CCA701C76CE4B001E1B0B /* view */ = {isa = PBXFileReference; lastKnownFileType = folder; path = view; sourceTree = "<group>"; };
 		BE5733F56C698680DF51D60F /* Pods-racquet-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DB7BFDA8CAA77D956AA027F0 /* Pods_racquet_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +169,7 @@
 		DE99CE3C995119C7AB26B0A9 /* racquet-iosTests */ = {
 			isa = PBXGroup;
 			children = (
+				AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */,
 				DE99CCC0DD7A69C9B351B58F /* Info.plist */,
 				DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */,
 			);
@@ -424,7 +426,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE99CEF6620B5C36F694E7B0 /* racquet_iosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */,
 				DE99CB1BDC88B64017AB98D2 /* racquet_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
