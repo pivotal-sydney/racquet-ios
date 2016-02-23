@@ -12,8 +12,10 @@
 		AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */; };
 		AE9CCA711C76CE4B001E1B0B /* view in Resources */ = {isa = PBXBuildFile; fileRef = AE9CCA701C76CE4B001E1B0B /* view */; };
 		DB90D8AD04ACFB8A746DC61B /* Pods_racquet_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7BFDA8CAA77D956AA027F0 /* Pods_racquet_iosUITests.framework */; };
+		AEFF00161C7C1336002485B0 /* ClubTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFF00151C7C1336002485B0 /* ClubTabViewController.swift */; };
+		AEFF00181C7C14A5002485B0 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFF00171C7C14A5002485B0 /* FeedViewController.swift */; };
+		AEFF001C1C7C19E0002485B0 /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFF001B1C7C19E0002485B0 /* LeaderboardViewController.swift */; };
 		DE99C1DB8AE57FDCB9AE0510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99C33EBC7C0639BC90B327 /* Assets.xcassets */; };
-		DE99C38CA2C2C54A72334040 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CA09445E79B14D95F914 /* ClubsViewController.swift */; };
 		DE99C599F4179A4E0CE73D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C579170AE386C85AA13D /* Main.storyboard */; };
 		DE99C7726E7EA8DB0656B215 /* ClubCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */; };
 		DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */; };
@@ -51,6 +53,9 @@
 		AE9CCA701C76CE4B001E1B0B /* view */ = {isa = PBXFileReference; lastKnownFileType = folder; path = view; sourceTree = "<group>"; };
 		BE5733F56C698680DF51D60F /* Pods-racquet-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DB7BFDA8CAA77D956AA027F0 /* Pods_racquet_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFF00151C7C1336002485B0 /* ClubTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubTabViewController.swift; sourceTree = "<group>"; };
+		AEFF00171C7C14A5002485B0 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		AEFF001B1C7C19E0002485B0 /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		DE99C0A0CB90790A6DCC9B05 /* racquet-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "racquet-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewController.swift; sourceTree = "<group>"; };
 		DE99C2F30E7C262A0E483F5C /* racquet_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racquet_iosUITests.swift; sourceTree = "<group>"; };
@@ -60,7 +65,6 @@
 		DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClubViewCell.swift; path = view/ClubViewCell.swift; sourceTree = "<group>"; };
 		DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racquet_iosTests.swift; sourceTree = "<group>"; };
 		DE99C9430B1C5BAD00BFD6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		DE99CA09445E79B14D95F914 /* ClubsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
 		DE99CA5B3F1BD7CFEC78AE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CAAC4540A61E3F2BB39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE99CCC0DD7A69C9B351B58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -159,9 +163,11 @@
 				DE99C33EBC7C0639BC90B327 /* Assets.xcassets */,
 				DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */,
 				DE99C579170AE386C85AA13D /* Main.storyboard */,
-				DE99CA09445E79B14D95F914 /* ClubsViewController.swift */,
 				DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */,
 				DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */,
+				AEFF00151C7C1336002485B0 /* ClubTabViewController.swift */,
+				AEFF00171C7C14A5002485B0 /* FeedViewController.swift */,
+				AEFF001B1C7C19E0002485B0 /* LeaderboardViewController.swift */,
 			);
 			path = "racquet-ios";
 			sourceTree = "<group>";
@@ -443,8 +449,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */,
-				DE99C38CA2C2C54A72334040 /* ClubsViewController.swift in Sources */,
+				AEFF00161C7C1336002485B0 /* ClubTabViewController.swift in Sources */,
 				DE99CEA68457132C10A046C3 /* ClubViewCell.swift in Sources */,
+				AEFF00181C7C14A5002485B0 /* FeedViewController.swift in Sources */,
+				AEFF001C1C7C19E0002485B0 /* LeaderboardViewController.swift in Sources */,
 				DE99C7726E7EA8DB0656B215 /* ClubCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

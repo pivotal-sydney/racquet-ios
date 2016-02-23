@@ -11,4 +11,5 @@ class ClubViewCell : UICollectionViewCell {
     @IBOutlet weak var image: UIImageView!
 
     @IBOutlet weak var clubName: UILabel!
+    
 }

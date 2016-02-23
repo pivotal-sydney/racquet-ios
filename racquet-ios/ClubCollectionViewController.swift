@@ -57,4 +57,13 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         return CGSize(width: size, height: size)
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "select_club")
+        {
+            let indexPath = collectionView!.indexPathForCell(sender as! UICollectionViewCell)!
+            let name = clubs["clubs"][indexPath.row]["name"].string!
+            (segue.destinationViewController as! ClubTabViewController).clubName = name
+            
+        }
+    }
 }
