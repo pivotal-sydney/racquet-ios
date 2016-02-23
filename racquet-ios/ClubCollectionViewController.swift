@@ -55,4 +55,9 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         return 1
     }
 
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let width = (collectionView.frame.size.width - 2) / 3;
+        return CGSize(width: width, height: width)
+    }
+
 }
