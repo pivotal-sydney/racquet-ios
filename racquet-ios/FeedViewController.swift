@@ -8,14 +8,25 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var feedTableView: UITableView!
     
     private var matches: SwiftyJSON.JSON = nil
+    var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+        self.feedTableView.addSubview(self.refreshControl) // not required when using UITableViewController
+        
+        clubName.text = (self.tabBarController as? ClubTabViewController)?.club["name"].string!
+        
+        loadData()
+    }
+    
+    func loadData() {
         let clubTabViewController = self.tabBarController as? ClubTabViewController
         let slug = clubTabViewController?.club["slug"].string!
         let url = "https://racquet-io.cfapps.io/api/\(slug!)/matches"
-
-        clubName.text = clubTabViewController?.club["name"].string!
         
         Alamofire.request(.GET, url)
             .responseJSON {
@@ -35,6 +46,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                     return
                 })
         }
+    }
+    
+    func refresh(sender:AnyObject) {
+        loadData()
+        self.refreshControl.endRefreshing()
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
