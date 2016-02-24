@@ -14,7 +14,7 @@ class LeaderboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        clubName.text = (self.tabBarController as! ClubTabViewController).clubName
+        clubName.text = (self.tabBarController as? ClubTabViewController)?.club["name"].string!
     }
     
 }

@@ -51,9 +51,8 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         if (segue.identifier == "select_club")
         {
             let indexPath = collectionView!.indexPathForCell(sender as! UICollectionViewCell)!
-            let name = clubs["clubs"][indexPath.row]["name"].string!
-            (segue.destinationViewController as! ClubTabViewController).clubName = name
-            
+            let club = clubs["clubs"][indexPath.row]
+            (segue.destinationViewController as! ClubTabViewController).club = club
         }
     }
 }

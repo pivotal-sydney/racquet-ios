@@ -8,10 +8,11 @@
 
 
 import UIKit
+import SwiftyJSON
 
 class ClubTabViewController: UITabBarController {
     
-    var clubName: String = ""
+    var club: JSON = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,10 +1,18 @@
+//
+//  FeedTableViewController.swift
+//  racquet-ios
+//
+//  Created by pivotal on 2/24/16.
+//  Copyright © 2016 Pivotal. All rights reserved.
+//
+
 import UIKit
 import Alamofire
 import SwiftyJSON
 
-class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FeedTableViewController: UITableViewController {
+    
     @IBOutlet weak var clubName: UILabel!
-    @IBOutlet weak var feedTableView: UITableView!
     
     private var matches: SwiftyJSON.JSON = nil
     
@@ -27,22 +35,21 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                     self.matches = responseObject
                 }
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.feedTableView.reloadData()
+                    self.tableView.reloadData()
                     return
                 })
         }
     }
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return matches.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         return tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! ClubFeedViewCell
     }
-
 }
