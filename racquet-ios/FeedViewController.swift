@@ -11,8 +11,11 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let slug = (self.tabBarController as? ClubTabViewController)?.club["slug"].string!
+        let clubTabViewController = self.tabBarController as? ClubTabViewController
+        let slug = clubTabViewController?.club["slug"].string!
         let url = "https://racquet-io.cfapps.io/api/\(slug!)/matches"
+
+        clubName.text = clubTabViewController?.club["name"].string!
         
         Alamofire.request(.GET, url)
             .responseJSON {
