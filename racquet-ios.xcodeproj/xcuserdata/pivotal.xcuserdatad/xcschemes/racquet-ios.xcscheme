@@ -37,16 +37,6 @@
                ReferencedContainer = "container:racquet-ios.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DE99C1A56449DB2585B526B4"
-               BuildableName = "racquet-iosUITests.xctest"
-               BlueprintName = "racquet-iosUITests"
-               ReferencedContainer = "container:racquet-ios.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

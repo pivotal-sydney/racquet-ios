@@ -11,16 +11,30 @@ import Nimble
 class ClubCollectionViewControllerSpec: QuickSpec {
     override func spec() {
         var controller: ClubCollectionViewController?
+        var fakeRestService: FakeRacquetRestService = FakeRacquetRestService()
+
         beforeEach() {
             var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             controller = storyboard.instantiateViewControllerWithIdentifier("ClubCollectionViewController") as! ClubCollectionViewController
             controller!.loadView()
+            controller!.populateDatur(fakeRestService)
         }
+
         describe("on populate clubs") {
             it("should retrieve response") {
-                let fakeRestService = FakeRacquetRestService()
-                controller!.populateDatur(fakeRestService)
-                expect(controller!.clubs).to(equal(fakeRestService.json))
+                expect(controller!.clubs).to(equal(fakeRestService.clubs))
+                expect(controller!.clubs["clubs"].count).to(equal(2))
+                expect(controller!.clubs["clubs"][0]["slug"]).to(equal("test-slug1"))
+            }
+
+            it("numberOfItemsInSection matches the clubs count") {
+                let result = controller!.collectionView(controller!.collectionView!, numberOfItemsInSection: 1)
+                expect(result).to(equal(2))
+            }
+
+            it("numberOfSectionsInCollectionView returns one") {
+                let result = controller!.numberOfSectionsInCollectionView(controller!.collectionView!)
+                expect(result).to(equal(1))
             }
         }
     }

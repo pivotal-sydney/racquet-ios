@@ -46,7 +46,7 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         let size = (collectionView.frame.size.width - CGFloat(gridSize - 1)) / CGFloat(gridSize);
         return CGSize(width: size, height: size)
     }
-
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "select_club")
         {

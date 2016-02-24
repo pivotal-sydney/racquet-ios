@@ -8,13 +8,24 @@ import SwiftyJSON
 @testable import racquet_ios
 
 
-struct FakeRacquetRestService: RacquetRestService {
-    var json: SwiftyJSON.JSON
+class FakeRacquetRestService: RacquetRestService {
+    var clubs: SwiftyJSON.JSON
+
+    var clubJsonString: String
+
     init() {
-        self.json = SwiftyJSON.JSON.parse("{}")
+        let bundle = NSBundle(forClass: self.dynamicType)
+        let path = bundle.pathForResource("sample_club_json", ofType: "json")
+        do {
+            try clubJsonString = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
+        } catch {
+            clubJsonString = "{}"
+        }
+
+        self.clubs = SwiftyJSON.JSON.parse(clubJsonString)
     }
     
     func getClubs(callback: (response: SwiftyJSON.JSON?, success: Bool) -> Void) {
-        callback(response: json, success: true)
+        callback(response: clubs, success: true)
     }
 }
