@@ -13,6 +13,11 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         self.collectionView!.delegate? = self
         populateDatur()
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        populateDatur()
+    }
 
     func populateDatur(service: RacquetRestService = RealRacquetRestService()) {
         service.getClubs(onGetClubs);
