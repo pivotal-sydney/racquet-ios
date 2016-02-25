@@ -44,7 +44,7 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         return 1
     }
 
-    let gridSize = 4;
+    let gridSize = 3;
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let size = (collectionView.frame.size.width - CGFloat(gridSize - 1)) / CGFloat(gridSize);
         return CGSize(width: size, height: size)
