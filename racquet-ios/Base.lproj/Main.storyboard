@@ -104,7 +104,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B4N-Td-TmP">
                                             <rect key="frame" x="18" y="8" width="61" height="58"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" secondItem="B4N-Td-TmP" secondAttribute="height" multiplier="109:103" id="gIa-lB-SUF"/>
+                                                <constraint firstAttribute="width" secondItem="B4N-Td-TmP" secondAttribute="height" multiplier="1:1" id="gIa-lB-SUF"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUP-tV-rT7">
@@ -163,7 +163,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@winner" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83C-XY-YV8">
-                                <rect key="frame" x="56" y="214.5" width="208" height="30"/>
+                                <rect key="frame" x="56" y="215" width="208" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>

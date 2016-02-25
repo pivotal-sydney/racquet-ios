@@ -8,6 +8,8 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
 
     private let reuseIdentifier = "ClubViewCell"
     var clubs: SwiftyJSON.JSON = nil
+    
+    let gridSize = 3;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,12 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         cell.backgroundColor = UIColor.whiteColor()
         cell.image.hnk_setImageFromURL(NSURL(string: clubs["clubs"][indexPath.row]["logo"]["standard"]["url"].string!)!, placeholder: UIImage(named: "mini-racquet"))
         cell.clubName.text = clubs["clubs"][indexPath.row]["name"].string!
+        
+        let cellWidth = (collectionView.frame.size.width - CGFloat(gridSize - 1)) / CGFloat(gridSize);
+        let imageWidth = cellWidth - 35.0
+        
+        cell.image.layer.cornerRadius = (imageWidth / CGFloat(2))
+        cell.image.clipsToBounds = true
         return cell
     }
 
@@ -43,8 +51,6 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
-
-    let gridSize = 3;
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         let size = (collectionView.frame.size.width - CGFloat(gridSize - 1)) / CGFloat(gridSize);
         return CGSize(width: size, height: size)
