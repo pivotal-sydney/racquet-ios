@@ -4,6 +4,7 @@ import SwiftyJSON
 import Haneke
 
 class ClubCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    @IBOutlet weak var progressIndicator: UIActivityIndicatorView!
 
     private let reuseIdentifier = "ClubViewCell"
     var clubs: SwiftyJSON.JSON = nil
@@ -13,17 +14,14 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         self.collectionView!.delegate? = self
         populateDatur()
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        populateDatur()
-    }
 
     func populateDatur(service: RacquetRestService = RealRacquetRestService()) {
+        progressIndicator.startAnimating()
         service.getClubs(onGetClubs);
     }
 
     func onGetClubs(response: SwiftyJSON.JSON?, success: Bool) {
+        progressIndicator.stopAnimating()
         if success {
             self.clubs = response!
             self.collectionView!.reloadData()

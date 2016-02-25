@@ -88,6 +88,10 @@
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <activityIndicatorView key="backgroundView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" id="DI3-Wb-yzB">
+                            <rect key="frame" x="0.0" y="0.0" width="328" height="319"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </activityIndicatorView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClubViewCell" id="b3U-o4-zaI" customClass="ClubViewCell" customModule="racquet_ios" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="1" width="59" height="59"/>
@@ -136,6 +140,9 @@
                             <outlet property="delegate" destination="28W-t5-qny" id="kPa-ZN-4sk"/>
                         </connections>
                     </collectionView>
+                    <connections>
+                        <outlet property="progressIndicator" destination="DI3-Wb-yzB" id="H2N-3L-7U9"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gO9-en-h76" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,7 +325,7 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                                         <rect key="frame" x="0.0" y="28" width="296" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DDP-53-Xy2" id="Xne-f5-wmy">
-                                            <rect key="frame" x="0.0" y="0.0" width="296" height="104"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="296" height="103.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="defeated" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfF-DL-hn3">
@@ -416,14 +423,19 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                                     <outlet property="delegate" destination="jtf-Mg-Kjc" id="emR-eD-7lq"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="qtn-Rv-jHO">
+                                <rect key="frame" x="154" y="150" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qtn-Rv-jHO" firstAttribute="centerX" secondItem="paa-7Z-KL8" secondAttribute="centerX" id="M60-AM-KyC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="paa-7Z-KL8" secondAttribute="trailing" id="Ouu-Wk-H9g"/>
                             <constraint firstItem="8xb-CB-dWj" firstAttribute="top" secondItem="ZMT-rF-p5T" secondAttribute="bottom" id="PGv-fx-Wmo"/>
                             <constraint firstItem="8xb-CB-dWj" firstAttribute="centerX" secondItem="htD-KQ-2uQ" secondAttribute="centerX" id="Y1J-hv-C3Y"/>
                             <constraint firstItem="8xb-CB-dWj" firstAttribute="width" secondItem="htD-KQ-2uQ" secondAttribute="width" id="ZvO-e0-pWe"/>
                             <constraint firstItem="paa-7Z-KL8" firstAttribute="leading" secondItem="htD-KQ-2uQ" secondAttribute="leadingMargin" id="aRz-cw-Wxe"/>
+                            <constraint firstItem="qtn-Rv-jHO" firstAttribute="centerY" secondItem="paa-7Z-KL8" secondAttribute="centerY" id="hH8-Fb-Pwq"/>
                             <constraint firstItem="hA3-UC-Ukj" firstAttribute="top" secondItem="paa-7Z-KL8" secondAttribute="bottom" id="qXX-ft-VAm"/>
                             <constraint firstItem="paa-7Z-KL8" firstAttribute="top" secondItem="8xb-CB-dWj" secondAttribute="bottom" id="xaw-pT-kwC"/>
                         </constraints>
@@ -432,6 +444,7 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                     <connections>
                         <outlet property="clubName" destination="cNZ-os-zpQ" id="EQG-Dx-q0n"/>
                         <outlet property="feedTableView" destination="paa-7Z-KL8" id="ioA-X0-JMh"/>
+                        <outlet property="progressIndicator" destination="qtn-Rv-jHO" id="hY7-TY-9OP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MLm-t0-Zis" userLabel="First Responder" sceneMemberID="firstResponder"/>
