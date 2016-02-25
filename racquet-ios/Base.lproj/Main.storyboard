@@ -142,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="1193" y="363"/>
         </scene>
-        <!--View Controller-->
+        <!--Match Add Controller-->
         <scene sceneID="RqT-aF-IBs">
             <objects>
-                <viewController id="DTi-2d-QNk" sceneMemberID="viewController">
+                <viewController id="DTi-2d-QNk" customClass="MatchAddController" customModule="racquet_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9Oo-N4-7ND"/>
                         <viewControllerLayoutGuide type="bottom" id="o5I-dC-R13"/>
@@ -174,8 +174,16 @@
                                 <rect key="frame" x="-4" y="0.0" width="328" height="44"/>
                                 <items>
                                     <navigationItem id="i11-GB-rWQ">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="G3m-n4-FbK" userLabel="Cancel"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="123-ze-u30"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="G3m-n4-FbK" userLabel="Cancel">
+                                            <connections>
+                                                <action selector="cancel:" destination="DTi-2d-QNk" id="bed-1X-t36"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="123-ze-u30">
+                                            <connections>
+                                                <action selector="done:" destination="DTi-2d-QNk" id="GCB-YC-DpK"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -434,7 +442,7 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                     <navigationItem key="navigationItem" id="O7Y-Zr-KWC">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ahS-dD-zka" userLabel="AddMatch">
                             <connections>
-                                <segue destination="DTi-2d-QNk" kind="modal" id="V2O-e2-jbQ"/>
+                                <segue destination="DTi-2d-QNk" kind="modal" identifier="add_match" id="V2O-e2-jbQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
