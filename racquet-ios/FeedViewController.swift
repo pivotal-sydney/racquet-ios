@@ -19,8 +19,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.feedTableView.addSubview(self.refreshControl)
         
         clubName.text = (self.tabBarController as? ClubTabViewController)?.club["name"].string!
-        
-        loadData()
     }
     
     func loadData(service: RacquetRestService = RealRacquetRestService()) {
@@ -35,6 +33,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    override func viewDidAppear(animated: Bool) {
+        loadData()
+    }
+
     func refresh(sender:AnyObject) {
         loadData()
         self.refreshControl.endRefreshing()

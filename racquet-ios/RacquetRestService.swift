@@ -10,6 +10,7 @@ import Alamofire
 protocol RacquetRestService {
     func getClubs(callback: (response: SwiftyJSON.JSON?, success: Bool) -> Void) -> Void
     func getFeed(slug: String, callback: (response: SwiftyJSON.JSON?, success: Bool) -> Void) -> Void
+    func addMatch(clubId: Int, winner: String, loser: String, callback: (success: Bool) -> Void) -> Void
 }
 
 struct RealRacquetRestService : RacquetRestService {
@@ -50,6 +51,34 @@ struct RealRacquetRestService : RacquetRestService {
                 debugPrint(responseObject)
                 callback(response: responseObject, success: true)
             }
+        }
+    }
+
+    func addMatch(clubId: Int, winner: String, loser: String, callback: (success: Bool) -> Void) {
+        let parameters = [
+            "match": [
+                "winner": winner,
+                "loser": loser
+            ]
+        ]
+
+        Alamofire.request(.POST, "https://racquet-io.cfapps.io/api/\(clubId)/matches", parameters: parameters, encoding: .JSON)
+        .response {
+            request, response, data, error in
+            guard error == nil else {
+                print("error calling POST on /api/\(clubId)/matches")
+                print(error)
+                callback(success: false)
+                return
+            }
+
+            guard response?.statusCode == 201 else {
+                print("Match failed to be added. Status code was: \(response?.statusCode).")
+                callback(success: false)
+                return
+            }
+
+            callback(success: true)
         }
     }
 }

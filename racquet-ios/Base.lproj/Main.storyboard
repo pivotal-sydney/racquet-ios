@@ -153,12 +153,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83C-XY-YV8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@winner" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83C-XY-YV8">
                                 <rect key="frame" x="56" y="195" width="208" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-Sf-slF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@loser" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-Sf-slF">
                                 <rect key="frame" x="56" y="345" width="208" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -216,6 +216,10 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                             <constraint firstItem="OQU-q1-kAf" firstAttribute="top" secondItem="6NN-sr-bKI" secondAttribute="bottom" constant="15" id="x3K-EV-pAt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loser" destination="ooE-Sf-slF" id="ZOY-Hp-cg8"/>
+                        <outlet property="winner" destination="83C-XY-YV8" id="Ug1-8j-bbW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNr-vR-DMw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
