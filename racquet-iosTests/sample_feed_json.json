@@ -1,0 +1,80 @@
+[
+  {
+    "loser" : {
+      "losses" : 8,
+      "points" : 914,
+      "profile_image_url" : "http:\/\/res.cloudinary.com\/docwixn82\/image\/twitter_name\/mikfreedman",
+      "winning_percentage" : 0.5555555555555556,
+      "trending_down" : false,
+      "twitter_handle" : "mikfreedman",
+      "trending_up" : false,
+      "wins" : 10,
+      "name" : "loser-name-one"
+    },
+    "id" : 12838,
+    "points" : 10,
+    "winner" : {
+      "losses" : 13,
+      "points" : 1014,
+      "profile_image_url" : "http:\/\/res.cloudinary.com\/docwixn82\/image\/twitter_name\/aleungpivotal",
+      "winning_percentage" : 0.5357142857142857,
+      "trending_down" : false,
+      "twitter_handle" : "aleungpivotal",
+      "trending_up" : false,
+      "wins" : 15,
+      "name" : "winner-name-one"
+    }
+  },
+  {
+    "loser" : {
+      "losses" : 13,
+      "points" : 1014,
+      "profile_image_url" : "http:\/\/res.cloudinary.com\/docwixn82\/image\/twitter_name\/aleungpivotal",
+      "winning_percentage" : 0.5357142857142857,
+      "trending_down" : false,
+      "twitter_handle" : "aleungpivotal",
+      "trending_up" : false,
+      "wins" : 15,
+      "name" : "loser-name-two"
+    },
+    "id" : 12837,
+    "points" : 10,
+    "winner" : {
+      "losses" : 3,
+      "points" : 983,
+      "profile_image_url" : "http:\/\/res.cloudinary.com\/docwixn82\/image\/twitter_name\/lozcrowther",
+      "winning_percentage" : 0.25,
+      "trending_down" : false,
+      "twitter_handle" : "lozcrowther",
+      "trending_up" : false,
+      "wins" : 1,
+      "name" : "winner-name-two"
+    }
+  },
+  {
+    "loser" : {
+      "losses" : 8,
+      "points" : 914,
+      "profile_image_url" : "http:\/\/res.cloudinary.com\/docwixn82\/image\/twitter_name\/mikfreedman",
+      "winning_percentage" : 0.5555555555555556,
+      "trending_down" : false,
+      "twitter_handle" : "mikfreedman",
+      "trending_up" : false,
+      "wins" : 10,
+      "name" : "loser-name-three"
+    },
+    "id" : 12834,
+    "points" : 70,
+    "winner" : {
+      "losses" : 13,
+      "points" : 1014,
+      "profile_image_url" : "http:\/\/res.cloudinary.com\/docwixn82\/image\/twitter_name\/aleungpivotal",
+      "winning_percentage" : 0.5357142857142857,
+      "trending_down" : false,
+      "twitter_handle" : "aleungpivotal",
+      "trending_up" : false,
+      "wins" : 15,
+      "name" : "winner-name-three"
+    }
+  }
+]

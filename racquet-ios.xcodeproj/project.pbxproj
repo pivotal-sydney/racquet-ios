@@ -20,9 +20,10 @@
 		AEFF00201C7C29BF002485B0 /* ClubFeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEFF001F1C7C29BF002485B0 /* ClubFeedViewCell.swift */; };
 		DB90D8AD04ACFB8A746DC61B /* Pods_racquet_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB7BFDA8CAA77D956AA027F0 /* Pods_racquet_iosUITests.framework */; };
 		DE99C1DB8AE57FDCB9AE0510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE99C33EBC7C0639BC90B327 /* Assets.xcassets */; };
+		DE99C4B54497A4D87E6BD03F /* FeedViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C3EFC485AB9197317285 /* FeedViewControllerSpec.swift */; };
 		DE99C599F4179A4E0CE73D13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE99C579170AE386C85AA13D /* Main.storyboard */; };
 		DE99C625AFDED91E8A65B3BD /* sample_club_json.json in Resources */ = {isa = PBXBuildFile; fileRef = DE99C6E03F5B864BA6EB9CC1 /* sample_club_json.json */; };
-		DE99C6B9CBD2C7C885C59E2C /* (null) in Sources */ = {isa = PBXBuildFile; };
+		DE99C6CA54BFCBD9ED3A0E47 /* sample_feed_json.json in Resources */ = {isa = PBXBuildFile; fileRef = DE99CB0F92B9C008975C5431 /* sample_feed_json.json */; };
 		DE99C7726E7EA8DB0656B215 /* ClubCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */; };
 		DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */; };
 		DE99CB1BDC88B64017AB98D2 /* racquet_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */; };
@@ -71,6 +72,7 @@
 		DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewController.swift; sourceTree = "<group>"; };
 		DE99C2F30E7C262A0E483F5C /* racquet_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racquet_iosUITests.swift; sourceTree = "<group>"; };
 		DE99C33EBC7C0639BC90B327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE99C3EFC485AB9197317285 /* FeedViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewControllerSpec.swift; sourceTree = "<group>"; };
 		DE99C45F02A42C7DFA161D81 /* racquet-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "racquet-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C4C482294213FBFF4069 /* racquet-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "racquet-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClubViewCell.swift; path = view/ClubViewCell.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		DE99C9430B1C5BAD00BFD6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CA5B3F1BD7CFEC78AE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CAAC4540A61E3F2BB39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE99CB0F92B9C008975C5431 /* sample_feed_json.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_feed_json.json; sourceTree = "<group>"; };
 		DE99CCC0DD7A69C9B351B58F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE99CE7479F72EB8A5177C2B /* RacquetRestService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RacquetRestService.swift; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 				DE99CCC0DD7A69C9B351B58F /* Info.plist */,
 				DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */,
 				DE99C6E03F5B864BA6EB9CC1 /* sample_club_json.json */,
+				DE99CB0F92B9C008975C5431 /* sample_feed_json.json */,
+				DE99C3EFC485AB9197317285 /* FeedViewControllerSpec.swift */,
 			);
 			path = "racquet-iosTests";
 			sourceTree = "<group>";
@@ -308,6 +313,7 @@
 			files = (
 				DE99CB8299716771D5883E5C /* Info.plist in Resources */,
 				DE99C625AFDED91E8A65B3BD /* sample_club_json.json in Resources */,
+				DE99C6CA54BFCBD9ED3A0E47 /* sample_feed_json.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,7 +468,7 @@
 				AEE067B41C7D3B8600B8DD66 /* FakeRacquetRestService.swift in Sources */,
 				AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */,
 				DE99CB1BDC88B64017AB98D2 /* racquet_iosTests.swift in Sources */,
-				DE99C6B9CBD2C7C885C59E2C /* (null) in Sources */,
+				DE99C4B54497A4D87E6BD03F /* FeedViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

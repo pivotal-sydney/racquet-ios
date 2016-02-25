@@ -7,7 +7,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var clubName: UILabel!
     @IBOutlet weak var feedTableView: UITableView!
     
-    private var matches: SwiftyJSON.JSON = nil
+    var matches: SwiftyJSON.JSON = nil
     var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
@@ -16,35 +16,22 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.refreshControl = UIRefreshControl()
         self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
-        self.feedTableView.addSubview(self.refreshControl) // not required when using UITableViewController
+        self.feedTableView.addSubview(self.refreshControl)
         
         clubName.text = (self.tabBarController as? ClubTabViewController)?.club["name"].string!
         
         loadData()
     }
     
-    func loadData() {
-        let clubTabViewController = self.tabBarController as? ClubTabViewController
-        let slug = clubTabViewController?.club["slug"].string!
-        let url = "https://racquet-io.cfapps.io/api/\(slug!)/matches"
-        
-        Alamofire.request(.GET, url)
-            .responseJSON {
-                response in
-                guard response.result.error == nil else {
-                    // got an error in getting the data, need to handle it
-                    print(response.result.error!)
-                    return
-                }
-                if let value: AnyObject = response.result.value {
-                    let responseObject = JSON(value)
-                    debugPrint(responseObject)
-                    self.matches = responseObject
-                }
-                dispatch_async(dispatch_get_main_queue(), {
-                    self.feedTableView.reloadData()
-                    return
-                })
+    func loadData(service: RacquetRestService = RealRacquetRestService()) {
+        let slug = (self.tabBarController as? ClubTabViewController)?.club["slug"].string!
+        service.getFeed(slug!, callback: recievedData)
+    }
+
+    func recievedData(response: SwiftyJSON.JSON?, success: Bool) {
+        if((response) != nil) {
+            self.matches = response!
+            self.feedTableView.reloadData()
         }
     }
     

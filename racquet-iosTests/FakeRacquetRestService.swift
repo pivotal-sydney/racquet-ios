@@ -9,23 +9,33 @@ import SwiftyJSON
 
 
 class FakeRacquetRestService: RacquetRestService {
-    var clubs: SwiftyJSON.JSON
 
-    var clubJsonString: String
-
+    var clubs: SwiftyJSON.JSON!
+    var feed: SwiftyJSON.JSON!
+    
     init() {
+        self.clubs = loadJsonData("sample_club_json")
+        self.feed = loadJsonData("sample_feed_json")
+    }
+    
+    func loadJsonData(filename: String) -> SwiftyJSON.JSON {
+        var jsonString: String
         let bundle = NSBundle(forClass: self.dynamicType)
-        let path = bundle.pathForResource("sample_club_json", ofType: "json")
+        let path = bundle.pathForResource(filename, ofType: "json")
         do {
-            try clubJsonString = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
+            try jsonString = String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)
         } catch {
-            clubJsonString = "{}"
+            jsonString = "{}"
         }
 
-        self.clubs = SwiftyJSON.JSON.parse(clubJsonString)
+        return SwiftyJSON.JSON.parse(jsonString)
     }
     
     func getClubs(callback: (response: SwiftyJSON.JSON?, success: Bool) -> Void) {
         callback(response: clubs, success: true)
+    }
+
+    func getFeed(slug: String, callback: (response: SwiftyJSON.JSON?, success: Bool) -> Void) {
+        callback(response: feed, success: true)
     }
 }
