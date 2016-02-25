@@ -11,11 +11,11 @@ import Nimble
 class ClubCollectionViewControllerSpec: QuickSpec {
     override func spec() {
         var controller: ClubCollectionViewController?
-        var fakeRestService: FakeRacquetRestService = FakeRacquetRestService()
+        let fakeRestService: FakeRacquetRestService = FakeRacquetRestService()
 
         beforeEach() {
-            var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            controller = storyboard.instantiateViewControllerWithIdentifier("ClubCollectionViewController") as! ClubCollectionViewController
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            controller = storyboard.instantiateViewControllerWithIdentifier("ClubCollectionViewController") as? ClubCollectionViewController
             controller!.loadView()
             controller!.populateDatur(fakeRestService)
         }

@@ -38,4 +38,12 @@ class FakeRacquetRestService: RacquetRestService {
     func getFeed(slug: String, callback: (response: SwiftyJSON.JSON?, success: Bool) -> Void) {
         callback(response: feed, success: true)
     }
+
+    func getLeaderboard(slug: String, callback: (response: SwiftyJSON.JSON?, success: Bool) -> Void) {
+        callback(response: nil, success: false)
+    }
+
+    func addMatch(clubId: Int, winner: String, loser: String, callback: (success: Bool) -> Void) {
+        callback(success: false)
+    }
 }

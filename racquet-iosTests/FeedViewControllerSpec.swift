@@ -12,11 +12,11 @@ import SwiftyJSON
 class FeedViewControllerSpec: QuickSpec {
     override func spec() {
         var controller: FeedViewController?
-        var fakeRestService: FakeRacquetRestService = FakeRacquetRestService()
+        let fakeRestService: FakeRacquetRestService = FakeRacquetRestService()
 
         beforeEach() {
-            var storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            controller = storyboard.instantiateViewControllerWithIdentifier("FeedViewController") as! FeedViewController
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            controller = storyboard.instantiateViewControllerWithIdentifier("FeedViewController") as? FeedViewController
 
             let tabBarController  = storyboard.instantiateViewControllerWithIdentifier("ClubTabViewController") as! ClubTabViewController
             tabBarController.club = SwiftyJSON.JSON.parse("{\"slug\": \"club-slug\",\"name\": \"club-name\"}")
