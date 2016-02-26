@@ -7,10 +7,11 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     @IBOutlet weak var clubName: UILabel!
     @IBOutlet weak var leaderboardTableView: UITableView!
+    @IBOutlet weak var minorLeagueView: UIView!
     
+    var minorLeagueController: MinorLeaguesCollectionViewController?
     var leaders: SwiftyJSON.JSON = nil
     var refreshControl: UIRefreshControl!
-    
     
     override func viewDidLoad() {
 
@@ -27,17 +28,22 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         clubName.text = (self.tabBarController as? ClubTabViewController)?.club["name"].string!
         
         loadData()
+        
+        
+
     }
    
     func loadData(service: RacquetRestService = RealRacquetRestService()) {
         let slug = (self.tabBarController as? ClubTabViewController)?.club["slug"].string!
-        service.getLeaderboard(slug!, callback: recievedData)
+        service.getLeaderboard(slug!, callback: receivedData)
     }
     
-    func recievedData(response: SwiftyJSON.JSON?, success: Bool) {
+    func receivedData(response: SwiftyJSON.JSON?, success: Bool) {
         if((response) != nil) {
             self.leaders = response!
             self.leaderboardTableView.reloadData()
+            self.minorLeagueController!.view.clipsToBounds = false
+            self.minorLeagueController!.populateDatur(self.leaders["minors"])
         }
     }
     
@@ -51,7 +57,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return leaders.count
+        return leaders["majors"].count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -65,12 +71,25 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         cell.lossesLabel!.text = String(member["losses"]) + " LOSSES"
         cell.pointsLabel!.text = String(member["points"]) + " pts"
         
+
+        
         let player_image = cell.playerImage!
         player_image.layer.cornerRadius = player_image.frame.size.width / CGFloat(2)
         player_image.clipsToBounds = true
-        player_image.hnk_setImageFromURL(NSURL(string: member["profile_image_url"].string!)!, placeholder: UIImage(named: "mini-racquet"))
+        var profileURL = ""
+        if (member["profile_image_url"]){
+          profileURL = member["profile_image_url"].string!
+        }
+        
+        player_image.hnk_setImageFromURL(NSURL(string: profileURL)!, placeholder: UIImage(named: "mini-racquet"))
         return cell
     }
 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "MinorLeagueSegue") {
+            self.minorLeagueController = segue.destinationViewController as! MinorLeaguesCollectionViewController
+        }
+    }
 }
 
