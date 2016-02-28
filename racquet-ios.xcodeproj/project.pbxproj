@@ -11,8 +11,8 @@
 		815D3FF9BB919C90083B0E03 /* Pods_racquet_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */; };
 		AE1FCEC61C7E6EEA00CA6119 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */; };
 		AE1FCECA1C7EB71000CA6119 /* LeaderboardMajorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */; };
+		AE6BD4861C83BFC9002A2259 /* ClubViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */; };
 		AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */; };
-		AE9CCA711C76CE4B001E1B0B /* view in Resources */ = {isa = PBXBuildFile; fileRef = AE9CCA701C76CE4B001E1B0B /* view */; };
 		AEBB97921C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */; };
 		AEBB97941C7FD32A008AC058 /* MinorLeaguesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */; };
 		AEE067B41C7D3B8600B8DD66 /* FakeRacquetRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE067B31C7D3B8600B8DD66 /* FakeRacquetRestService.swift */; };
@@ -34,7 +34,6 @@
 		DE99CBAD94808C2CDFAFF31D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99C9430B1C5BAD00BFD6C6 /* Info.plist */; };
 		DE99CBF1612398C6BF20E911 /* RacquetRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CE7479F72EB8A5177C2B /* RacquetRestService.swift */; };
 		DE99CD351A283EAC305C9FB3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99CA5B3F1BD7CFEC78AE64 /* Info.plist */; };
-		DE99CEA68457132C10A046C3 /* ClubViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,8 +61,8 @@
 		9D41C1996B0E1530862A814A /* Pods-racquet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.release.xcconfig"; sourceTree = "<group>"; };
 		AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
 		AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardMajorViewCell.swift; sourceTree = "<group>"; };
+		AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubViewCell.swift; sourceTree = "<group>"; };
 		AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewControllerSpec.swift; sourceTree = "<group>"; };
-		AE9CCA701C76CE4B001E1B0B /* view */ = {isa = PBXFileReference; lastKnownFileType = folder; path = view; sourceTree = "<group>"; };
 		AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorLeaguesCollectionViewController.swift; sourceTree = "<group>"; };
 		AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorLeaguesViewCell.swift; sourceTree = "<group>"; };
 		AEE067B31C7D3B8600B8DD66 /* FakeRacquetRestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRacquetRestService.swift; sourceTree = "<group>"; };
@@ -81,7 +80,6 @@
 		DE99C3EFC485AB9197317285 /* FeedViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewControllerSpec.swift; sourceTree = "<group>"; };
 		DE99C45F02A42C7DFA161D81 /* racquet-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "racquet-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C4C482294213FBFF4069 /* racquet-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "racquet-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClubViewCell.swift; path = view/ClubViewCell.swift; sourceTree = "<group>"; };
 		DE99C6E03F5B864BA6EB9CC1 /* sample_club_json.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_club_json.json; sourceTree = "<group>"; };
 		DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racquet_iosTests.swift; sourceTree = "<group>"; };
 		DE99C9430B1C5BAD00BFD6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
@@ -180,14 +178,13 @@
 		DE99CC5446317C905694D6B7 /* racquet-ios */ = {
 			isa = PBXGroup;
 			children = (
-				AE9CCA701C76CE4B001E1B0B /* view */,
 				DE99C9430B1C5BAD00BFD6C6 /* Info.plist */,
 				DE99C33EBC7C0639BC90B327 /* Assets.xcassets */,
 				DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */,
 				DE99C579170AE386C85AA13D /* Main.storyboard */,
 				AEFF001F1C7C29BF002485B0 /* ClubFeedViewCell.swift */,
 				AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */,
-				DE99C5AC9CB024207A2CF0B4 /* ClubViewCell.swift */,
+				AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */,
 				AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */,
 				DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */,
 				DE99CE7479F72EB8A5177C2B /* RacquetRestService.swift */,
@@ -333,7 +330,6 @@
 				DE99CBAD94808C2CDFAFF31D /* Info.plist in Resources */,
 				DE99C1DB8AE57FDCB9AE0510 /* Assets.xcassets in Resources */,
 				DE99C599F4179A4E0CE73D13 /* Main.storyboard in Resources */,
-				AE9CCA711C76CE4B001E1B0B /* view in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,10 +481,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE6BD4861C83BFC9002A2259 /* ClubViewCell.swift in Sources */,
 				DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */,
 				AEFF00161C7C1336002485B0 /* ClubTabViewController.swift in Sources */,
 				AE1FCECA1C7EB71000CA6119 /* LeaderboardMajorViewCell.swift in Sources */,
-				DE99CEA68457132C10A046C3 /* ClubViewCell.swift in Sources */,
 				AEFF00181C7C14A5002485B0 /* FeedViewController.swift in Sources */,
 				AEFF001C1C7C19E0002485B0 /* LeaderboardViewController.swift in Sources */,
 				AEFF00201C7C29BF002485B0 /* ClubFeedViewCell.swift in Sources */,
