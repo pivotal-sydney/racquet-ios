@@ -36,4 +36,10 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
         return 1
     }
     
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        print("triggered rotate " + String(self.collectionView!.frame.width))
+
+    }
+    
+    
 }

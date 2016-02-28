@@ -313,7 +313,7 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                                             <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <containerView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="1vU-wA-eYT">
+                                        <containerView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="1vU-wA-eYT">
                                             <rect key="frame" x="0.0" y="55" width="600" height="235"/>
                                             <connections>
                                                 <segue destination="IRW-9l-VGb" kind="embed" identifier="MinorLeagueSegue" id="VXE-Me-PkL"/>
@@ -326,10 +326,10 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                                         <constraint firstItem="1vU-wA-eYT" firstAttribute="top" secondItem="e94-I9-GLK" secondAttribute="bottom" constant="10" id="FRX-Vi-Hm7"/>
                                         <constraint firstItem="e94-I9-GLK" firstAttribute="centerX" secondItem="4SR-rW-YAl" secondAttribute="centerX" id="G8Y-Ms-hTQ"/>
                                         <constraint firstItem="sJK-1g-O7c" firstAttribute="top" secondItem="4SR-rW-YAl" secondAttribute="top" constant="5" id="JDC-Fo-Xr1"/>
+                                        <constraint firstItem="1vU-wA-eYT" firstAttribute="centerX" secondItem="4SR-rW-YAl" secondAttribute="centerX" id="LBf-Le-3fY"/>
+                                        <constraint firstItem="1vU-wA-eYT" firstAttribute="width" secondItem="4SR-rW-YAl" secondAttribute="width" id="Nj7-qs-sIJ"/>
                                         <constraint firstItem="e94-I9-GLK" firstAttribute="top" secondItem="sJK-1g-O7c" secondAttribute="bottom" constant="5" id="T1f-cb-4pb"/>
-                                        <constraint firstItem="1vU-wA-eYT" firstAttribute="leading" secondItem="4SR-rW-YAl" secondAttribute="leading" id="bsp-RA-bds"/>
                                         <constraint firstItem="sJK-1g-O7c" firstAttribute="centerX" secondItem="4SR-rW-YAl" secondAttribute="centerX" id="q9K-KT-2B1"/>
-                                        <constraint firstAttribute="trailing" secondItem="1vU-wA-eYT" secondAttribute="trailing" id="uqV-lU-Aee"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
@@ -657,7 +657,7 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
         <scene sceneID="pXq-af-KFG">
             <objects>
                 <viewController storyboardIdentifier="MinorLeaguesCollectionViewController" id="IRW-9l-VGb" customClass="MinorLeaguesCollectionViewController" customModule="racquet_ios" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" bounces="NO" scrollEnabled="NO" dataMode="prototypes" id="fFI-Gb-nip">
+                    <collectionView key="view" opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" bounces="NO" scrollEnabled="NO" dataMode="prototypes" id="fFI-Gb-nip">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="235"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

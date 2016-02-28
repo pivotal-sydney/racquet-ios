@@ -89,7 +89,15 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "MinorLeagueSegue") {
             self.minorLeagueController = segue.destinationViewController as! MinorLeaguesCollectionViewController
+            self.addChildViewController(self.minorLeagueController!)
+
         }
+    }
+    
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        self.leaderboardTableView!.reloadData()
+        self.minorLeagueController?.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
     }
 }
 

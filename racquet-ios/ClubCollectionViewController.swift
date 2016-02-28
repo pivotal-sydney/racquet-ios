@@ -9,12 +9,19 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
     private let reuseIdentifier = "ClubViewCell"
     var clubs: SwiftyJSON.JSON = nil
     
-    let gridSize = 3;
+    var gridSize = Int(UIScreen.mainScreen().bounds.width / CGFloat(100))
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView!.delegate? = self
         populateDatur()
+    }
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        //print("height:" + String(size.height) + "width:" + String(size.width))
+        gridSize = Int(size.width / CGFloat(100))
+        self.collectionView!.reloadData()
     }
 
     func populateDatur(service: RacquetRestService = RealRacquetRestService()) {
