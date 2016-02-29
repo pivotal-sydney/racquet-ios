@@ -42,12 +42,6 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         cell.backgroundColor = UIColor.whiteColor()
         cell.image.hnk_setImageFromURL(NSURL(string: clubs["clubs"][indexPath.row]["logo"]["standard"]["url"].string!)!, placeholder: UIImage(named: "mini-racquet"))
         cell.clubName.text = clubs["clubs"][indexPath.row]["name"].string!
-        
-        let cellWidth = (collectionView.frame.size.width - CGFloat(gridSize - 1)) / CGFloat(gridSize);
-        let imageWidth = cellWidth - 35.0
-        
-        cell.image.layer.cornerRadius = (imageWidth / CGFloat(2))
-        cell.image.clipsToBounds = true
         return cell
     }
 
