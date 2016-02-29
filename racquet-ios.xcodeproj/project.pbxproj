@@ -33,10 +33,7 @@
 		DE99C7726E7EA8DB0656B215 /* ClubCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */; };
 		DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */; };
 		DE99CB1BDC88B64017AB98D2 /* racquet_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */; };
-		DE99CB8299716771D5883E5C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99CCC0DD7A69C9B351B58F /* Info.plist */; };
-		DE99CBAD94808C2CDFAFF31D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99C9430B1C5BAD00BFD6C6 /* Info.plist */; };
 		DE99CBF1612398C6BF20E911 /* RacquetRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CE7479F72EB8A5177C2B /* RacquetRestService.swift */; };
-		DE99CD351A283EAC305C9FB3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE99CA5B3F1BD7CFEC78AE64 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -316,6 +313,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Pivotal;
 			};
 			buildConfigurationList = DE99CA270EA8AEBFC6036922 /* Build configuration list for PBXProject "racquet-ios" */;
@@ -342,7 +340,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE99CD351A283EAC305C9FB3 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +347,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE99CB8299716771D5883E5C /* Info.plist in Resources */,
 				DE99C625AFDED91E8A65B3BD /* sample_club_json.json in Resources */,
 				AE6BD48D1C83C9D8002A2259 /* sample_leaders_json.json in Resources */,
 				DE99C6CA54BFCBD9ED3A0E47 /* sample_feed_json.json in Resources */,
@@ -361,7 +357,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE99CBAD94808C2CDFAFF31D /* Info.plist in Resources */,
 				DE99C1DB8AE57FDCB9AE0510 /* Assets.xcassets in Resources */,
 				DE99C599F4179A4E0CE73D13 /* Main.storyboard in Resources */,
 			);
@@ -581,6 +576,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_STATIC_ANALYZER_MODE = shallow;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -612,6 +608,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -625,6 +622,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_STATIC_ANALYZER_MODE = shallow;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
@@ -649,6 +647,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
