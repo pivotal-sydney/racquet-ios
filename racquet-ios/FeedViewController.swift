@@ -53,7 +53,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! ClubFeedViewCell
         cell.loserLabel!.text = self.matches[indexPath.row]["loser"]["name"].string
         cell.winnerLabel!.text = self.matches[indexPath.row]["winner"]["name"].string
@@ -61,15 +60,9 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         let loser_image = cell.loserImage!
         let winner_image = cell.winnerImage!
 
-        //must be a better way to do rounding
-        loser_image.layer.cornerRadius = loser_image.frame.size.width / CGFloat(2)
-        loser_image.clipsToBounds = true
-
-        winner_image.layer.cornerRadius = loser_image.frame.size.width / CGFloat(2)
-        winner_image.clipsToBounds = true
-
         loser_image.hnk_setImageFromURL(NSURL(string: self.matches[indexPath.row]["loser"]["profile_image_url"].string!)!, placeholder: UIImage(named: "mini-racquet"))
         winner_image.hnk_setImageFromURL(NSURL(string: self.matches[indexPath.row]["winner"]["profile_image_url"].string!)!, placeholder: UIImage(named: "mini-racquet"))
+        
         return cell
     }
 }
