@@ -35,6 +35,22 @@ class LeaderboardViewControllerSpec: QuickSpec {
                 let result = controller!.numberOfSectionsInTableView(controller!.leaderboardTableView!)
                 expect(result).to(equal(1))
             }
+            
+            it("return Cell With label Attributes") {
+             let cell = controller!.tableView(controller!.leaderboardTableView!, cellForRowAtIndexPath: NSIndexPath(forRow: 0, inSection: 0)) as!LeaderboardMajorViewCell
+                expect(cell.rankLabel.text).to(equal("1"))
+                expect(cell.playerNameLabel.text).to(equal("Dylan Griffith"))
+                expect(cell.winsLabel.text).to(equal("8 WINS"))
+                expect(cell.lossesLabel.text).to(equal("6 LOSSES"))
+                expect(cell.pointsLabel.text).to(equal("1180 pts"))
+                
+            }
+            
+            
+            it("return cell with player image") {
+            let cell = controller!.tableView(controller!.leaderboardTableView!, cellForRowAtIndexPath: NSIndexPath(forRow: 0, inSection: 0)) as!LeaderboardMajorViewCell
+            expect(cell.playerImage.frame.width) > 0
+            }
         }
         
         describe("on load") {
