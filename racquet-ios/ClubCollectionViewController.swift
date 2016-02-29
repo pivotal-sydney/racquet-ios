@@ -8,9 +8,13 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
 
     private let reuseIdentifier = "ClubViewCell"
     var clubs: SwiftyJSON.JSON = nil
+    let minSquareSize = CGFloat(125)
+    var gridSize:Int
     
-    var gridSize = Int(UIScreen.mainScreen().bounds.width / CGFloat(100))
-    
+    required init?(coder aDecoder: NSCoder) {
+        self.gridSize = Int(UIScreen.mainScreen().bounds.width / self.minSquareSize)
+        super.init(coder: aDecoder)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,8 +23,7 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
     }
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        //print("height:" + String(size.height) + "width:" + String(size.width))
-        gridSize = Int(size.width / CGFloat(100))
+        gridSize = Int(size.width / minSquareSize)
         self.collectionView!.reloadData()
     }
 
@@ -53,7 +56,7 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         return 1
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let size = (collectionView.frame.size.width - CGFloat(gridSize - 1)) / CGFloat(gridSize);
+        let size = Int((collectionView.frame.size.width - CGFloat(gridSize - 1)) / CGFloat(gridSize));
         return CGSize(width: size, height: size)
     }
     
