@@ -42,8 +42,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         if((response) != nil) {
             self.leaders = response!
             self.leaderboardTableView.reloadData()
-            self.minorLeagueController!.view.clipsToBounds = false
-            self.minorLeagueController!.populateDatur(self.leaders["minors"])
+            //self.minorLeagueController!.view.clipsToBounds = false
+            self.minorLeagueController?.populateDatur(self.leaders["minors"])
         }
     }
     
@@ -88,7 +88,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if (segue.identifier == "MinorLeagueSegue") {
-            self.minorLeagueController = segue.destinationViewController as! MinorLeaguesCollectionViewController
+            self.minorLeagueController = segue.destinationViewController as? MinorLeaguesCollectionViewController
             self.addChildViewController(self.minorLeagueController!)
 
         }
@@ -96,7 +96,7 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        self.leaderboardTableView!.reloadData()
+        self.leaderboardTableView?.reloadData()
         self.minorLeagueController?.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
     }
 }

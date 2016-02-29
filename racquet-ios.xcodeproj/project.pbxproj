@@ -12,6 +12,8 @@
 		AE1FCEC61C7E6EEA00CA6119 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */; };
 		AE1FCECA1C7EB71000CA6119 /* LeaderboardMajorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */; };
 		AE6BD4861C83BFC9002A2259 /* ClubViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */; };
+		AE6BD48B1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BD48A1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift */; };
+		AE6BD48D1C83C9D8002A2259 /* sample_leaders_json.json in Resources */ = {isa = PBXBuildFile; fileRef = AE6BD48C1C83C9D8002A2259 /* sample_leaders_json.json */; };
 		AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */; };
 		AEBB97921C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */; };
 		AEBB97941C7FD32A008AC058 /* MinorLeaguesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */; };
@@ -62,6 +64,8 @@
 		AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
 		AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardMajorViewCell.swift; sourceTree = "<group>"; };
 		AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubViewCell.swift; sourceTree = "<group>"; };
+		AE6BD48A1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewControllerSpec.swift; sourceTree = "<group>"; };
+		AE6BD48C1C83C9D8002A2259 /* sample_leaders_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_leaders_json.json; sourceTree = "<group>"; };
 		AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewControllerSpec.swift; sourceTree = "<group>"; };
 		AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorLeaguesCollectionViewController.swift; sourceTree = "<group>"; };
 		AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorLeaguesViewCell.swift; sourceTree = "<group>"; };
@@ -166,8 +170,8 @@
 		AE6BD4891C83C0FA002A2259 /* Leaderboard */ = {
 			isa = PBXGroup;
 			children = (
-				AEFF001B1C7C19E0002485B0 /* LeaderboardViewController.swift */,
 				AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */,
+				AEFF001B1C7C19E0002485B0 /* LeaderboardViewController.swift */,
 				AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */,
 				AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */,
 			);
@@ -232,6 +236,8 @@
 				DE99C6E03F5B864BA6EB9CC1 /* sample_club_json.json */,
 				DE99CB0F92B9C008975C5431 /* sample_feed_json.json */,
 				DE99C3EFC485AB9197317285 /* FeedViewControllerSpec.swift */,
+				AE6BD48A1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift */,
+				AE6BD48C1C83C9D8002A2259 /* sample_leaders_json.json */,
 			);
 			path = "racquet-iosTests";
 			sourceTree = "<group>";
@@ -343,6 +349,7 @@
 			files = (
 				DE99CB8299716771D5883E5C /* Info.plist in Resources */,
 				DE99C625AFDED91E8A65B3BD /* sample_club_json.json in Resources */,
+				AE6BD48D1C83C9D8002A2259 /* sample_leaders_json.json in Resources */,
 				DE99C6CA54BFCBD9ED3A0E47 /* sample_feed_json.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,6 +503,7 @@
 			files = (
 				AEE067B41C7D3B8600B8DD66 /* FakeRacquetRestService.swift in Sources */,
 				AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */,
+				AE6BD48B1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift in Sources */,
 				DE99CB1BDC88B64017AB98D2 /* racquet_iosTests.swift in Sources */,
 				DE99C4B54497A4D87E6BD03F /* FeedViewControllerSpec.swift in Sources */,
 			);

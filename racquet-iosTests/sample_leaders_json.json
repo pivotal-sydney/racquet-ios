@@ -1,0 +1,230 @@
+{
+    "minors" : [
+                {
+                "member" : {
+                "losses" : 0,
+                "points" : 1019,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/dylan",
+                "winning_percentage" : 1,
+                "trending_down" : false,
+                "twitter_handle" : "dylan",
+                "trending_up" : false,
+                "wins" : 2,
+                "name" : "Dylan Hilton"
+                },
+                "rank" : 2
+                },
+                {
+                "member" : {
+                "losses" : 0,
+                "points" : 1010,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/f",
+                "winning_percentage" : 1,
+                "trending_down" : false,
+                "twitter_handle" : "f",
+                "trending_up" : false,
+                "wins" : 1,
+                "name" : "Fred Oliveira"
+                },
+                "rank" : 3
+                },
+                {
+                "member" : {
+                "losses" : 0,
+                "points" : 1010,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/jim",
+                "winning_percentage" : 1,
+                "trending_down" : false,
+                "twitter_handle" : "jim",
+                "trending_up" : false,
+                "wins" : 1,
+                "name" : "Jim Halligan"
+                },
+                "rank" : 3
+                },
+                {
+                "member" : {
+                "losses" : 0,
+                "points" : 1010,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/mik",
+                "winning_percentage" : 1,
+                "trending_down" : false,
+                "twitter_handle" : "mik",
+                "trending_up" : false,
+                "wins" : 1,
+                "name" : "Mik"
+                },
+                "rank" : 3
+                },
+                {
+                "member" : {
+                "losses" : 2,
+                "points" : 998,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/d_lorenc",
+                "winning_percentage" : 0.5,
+                "trending_down" : false,
+                "twitter_handle" : "d_lorenc",
+                "trending_up" : false,
+                "wins" : 2,
+                "name" : "Dariusz Lorenc"
+                },
+                "rank" : 6
+                },
+                {
+                "member" : {
+                "losses" : 1,
+                "points" : 990,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/mil",
+                "winning_percentage" : 0,
+                "trending_down" : false,
+                "twitter_handle" : "mil",
+                "trending_up" : false,
+                "wins" : 0,
+                "name" : "Dan"
+                },
+                "rank" : 8
+                },
+                {
+                "member" : {
+                "losses" : 1,
+                "points" : 990,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/g",
+                "winning_percentage" : 0,
+                "trending_down" : false,
+                "twitter_handle" : "g",
+                "trending_up" : false,
+                "wins" : 0,
+                "name" : "Greg Leding"
+                },
+                "rank" : 8
+                },
+                {
+                "member" : {
+                "losses" : 1,
+                "points" : 990,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/john",
+                "winning_percentage" : 0,
+                "trending_down" : false,
+                "twitter_handle" : "john",
+                "trending_up" : false,
+                "wins" : 0,
+                "name" : "John Shahidi"
+                },
+                "rank" : 8
+                },
+                {
+                "member" : {
+                "losses" : 1,
+                "points" : 990,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/stuartbargon",
+                "winning_percentage" : 0,
+                "trending_down" : false,
+                "twitter_handle" : "stuartbargon",
+                "trending_up" : false,
+                "wins" : 0,
+                "name" : "Stuart Bargon"
+                },
+                "rank" : 8
+                },
+                {
+                "member" : {
+                "losses" : 3,
+                "points" : 983,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/lozcrowther",
+                "winning_percentage" : 0.25,
+                "trending_down" : false,
+                "twitter_handle" : "lozcrowther",
+                "trending_up" : false,
+                "wins" : 1,
+                "name" : "Lawrence Crowther"
+                },
+                "rank" : 12
+                },
+                {
+                "member" : {
+                "losses" : 3,
+                "points" : 982,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/fred",
+                "winning_percentage" : 0.25,
+                "trending_down" : false,
+                "twitter_handle" : "fred",
+                "trending_up" : false,
+                "wins" : 1,
+                "name" : "Fred"
+                },
+                "rank" : 13
+                },
+                {
+                "member" : {
+                "losses" : 2,
+                "points" : 980,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/freedmanpivotal",
+                "winning_percentage" : 0,
+                "trending_down" : false,
+                "twitter_handle" : "freedmanpivotal",
+                "trending_up" : false,
+                "wins" : 0,
+                "name" : "Joel Freedman"
+                },
+                "rank" : 14
+                }
+                ],
+    "majors" : [
+                {
+                "member" : {
+                "losses" : 6,
+                "points" : 1180,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/dylanjgriffith",
+                "winning_percentage" : 0.5714285714285714,
+                "trending_down" : false,
+                "twitter_handle" : "dylanjgriffith",
+                "trending_up" : false,
+                "wins" : 8,
+                "name" : "Dylan Griffith"
+                },
+                "rank" : 1
+                },
+                {
+                "member" : {
+                "losses" : 3,
+                "points" : 998,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/bob",
+                "winning_percentage" : 0.5,
+                "trending_down" : false,
+                "twitter_handle" : "bob",
+                "trending_up" : false,
+                "wins" : 3,
+                "name" : "Bob Johnston"
+                },
+                "rank" : 6
+                },
+                {
+                "member" : {
+                "losses" : 14,
+                "points" : 926,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/aleungpivotal",
+                "winning_percentage" : 0.5172413793103449,
+                "trending_down" : false,
+                "twitter_handle" : "aleungpivotal",
+                "trending_up" : false,
+                "wins" : 15,
+                "name" : "Andrew Leung"
+                },
+                "rank" : 15
+                },
+                {
+                "member" : {
+                "losses" : 8,
+                "points" : 914,
+                "profile_image_url" : "http:\/\/res.cloudinary.com\/htjx6x6zp\/image\/twitter_name\/mikfreedman",
+                "winning_percentage" : 0.5555555555555556,
+                "trending_down" : false,
+                "twitter_handle" : "mikfreedman",
+                "trending_up" : false,
+                "wins" : 10,
+                "name" : "Michael Freedman"
+                },
+                "rank" : 16
+                }
+                ]
+}

@@ -12,10 +12,12 @@ class FakeRacquetRestService: RacquetRestService {
 
     var clubs: SwiftyJSON.JSON!
     var feed: SwiftyJSON.JSON!
+    var leaders: SwiftyJSON.JSON!
     
     init() {
         self.clubs = loadJsonData("sample_club_json")
         self.feed = loadJsonData("sample_feed_json")
+        self.leaders = loadJsonData("sample_leaders_json")
     }
     
     func loadJsonData(filename: String) -> SwiftyJSON.JSON {
@@ -40,7 +42,7 @@ class FakeRacquetRestService: RacquetRestService {
     }
 
     func getLeaderboard(slug: String, callback: (response: SwiftyJSON.JSON?, success: Bool) -> Void) {
-        callback(response: nil, success: false)
+        callback(response: leaders, success: true)
     }
 
     func addMatch(clubId: Int, winner: String, loser: String, callback: (success: Bool) -> Void) {
