@@ -144,6 +144,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AE6BD4871C83C0C6002A2259 /* Clubs */ = {
+			isa = PBXGroup;
+			children = (
+				AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */,
+				DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */,
+				AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */,
+			);
+			name = Clubs;
+			sourceTree = "<group>";
+		};
+		AE6BD4881C83C0E7002A2259 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				AEFF00171C7C14A5002485B0 /* FeedViewController.swift */,
+				AEFF001F1C7C29BF002485B0 /* ClubFeedViewCell.swift */,
+			);
+			name = Feed;
+			sourceTree = "<group>";
+		};
+		AE6BD4891C83C0FA002A2259 /* Leaderboard */ = {
+			isa = PBXGroup;
+			children = (
+				AEFF001B1C7C19E0002485B0 /* LeaderboardViewController.swift */,
+				AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */,
+				AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */,
+				AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */,
+			);
+			name = Leaderboard;
+			sourceTree = "<group>";
+		};
 		DE99C25F375C0686A52EB454 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,18 +212,12 @@
 				DE99C33EBC7C0639BC90B327 /* Assets.xcassets */,
 				DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */,
 				DE99C579170AE386C85AA13D /* Main.storyboard */,
-				AEFF001F1C7C29BF002485B0 /* ClubFeedViewCell.swift */,
-				AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */,
-				AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */,
-				AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */,
-				DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */,
+				AE6BD4871C83C0C6002A2259 /* Clubs */,
 				DE99CE7479F72EB8A5177C2B /* RacquetRestService.swift */,
 				AEFF00151C7C1336002485B0 /* ClubTabViewController.swift */,
-				AEFF00171C7C14A5002485B0 /* FeedViewController.swift */,
-				AEFF001B1C7C19E0002485B0 /* LeaderboardViewController.swift */,
-				AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */,
+				AE6BD4881C83C0E7002A2259 /* Feed */,
+				AE6BD4891C83C0FA002A2259 /* Leaderboard */,
 				AEE067B71C7E7F1300B8DD66 /* MatchAddController.swift */,
-				AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */,
 			);
 			path = "racquet-ios";
 			sourceTree = "<group>";
