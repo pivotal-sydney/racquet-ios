@@ -6,7 +6,7 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
     
     private let reuseIdentifier = "MinorLeaguesViewCell"
     private var minors :SwiftyJSON.JSON = []
-    
+    //private var numberOfMinors = 4 // Int(UIScreen.mainScreen().bounds.width ))
 
     
     override func viewDidLoad() {
@@ -29,6 +29,7 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        //return minors.count < self.numberOfMinors ? minors.count : numberOfMinors
         return minors.count
     }
     
@@ -37,9 +38,9 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
     }
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        print("triggered rotate " + String(self.collectionView!.frame.width))
+        self.collectionView!.frame.size.width = size.width
+        self.collectionView!.reloadData()
 
     }
-    
-    
+
 }

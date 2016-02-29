@@ -94,6 +94,14 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         }
     }
     
+    override func shouldAutomaticallyForwardAppearanceMethods() -> Bool {
+        return true
+    }
+    
+
+    override func shouldAutomaticallyForwardRotationMethods() -> Bool {
+        return true
+    }
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         self.leaderboardTableView?.reloadData()
