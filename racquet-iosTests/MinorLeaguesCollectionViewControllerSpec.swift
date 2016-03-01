@@ -36,6 +36,12 @@ class MinorLeaguesCollectionViewControllerSpec: QuickSpec {
                 let result = self.controller!.numberOfSectionsInCollectionView(self.controller!.collectionView!)
                 expect(result).to(equal(1))
             }
+            
+            it("returns cell with player image") {
+                let cell = self.controller!.collectionView(self.controller!.collectionView!, cellForItemAtIndexPath: NSIndexPath(forRow: 0, inSection: 0)) as!MinorLeaguesViewCell
+                expect(cell.faceImage.frame.width) > 0
+                expect(cell.faceImage.clipsToBounds) == true
+            }
         }
     }
 }
