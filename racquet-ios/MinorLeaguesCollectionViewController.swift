@@ -7,7 +7,7 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
     private let reuseIdentifier = "MinorLeaguesViewCell"
     private let insetSize = CGFloat(50)
     private let cellSize = CGFloat(50)
-    private var minors :SwiftyJSON.JSON = []
+    var minors :SwiftyJSON.JSON = []
     private var numberOfMinors: Int
     
     required init?(coder aDecoder: NSCoder) {
