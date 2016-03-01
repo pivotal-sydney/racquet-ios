@@ -16,8 +16,9 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
         self.collectionView!.delegate? = self
+        self.collectionView!.autoresizingMask = UIViewAutoresizing.FlexibleWidth
+        super.viewDidLoad()
     }
     
     func populateDatur(minors: SwiftyJSON.JSON) {
@@ -43,9 +44,9 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
     }
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
-        self.collectionView!.frame.size.width = size.width
         self.numberOfMinors = Int((size.width - (self.insetSize*2)) / self.cellSize)
         self.collectionView!.reloadData()
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
@@ -55,5 +56,6 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSizeMake(self.cellSize, self.cellSize)
     }
+    
 
 }

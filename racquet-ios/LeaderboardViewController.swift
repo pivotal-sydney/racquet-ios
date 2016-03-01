@@ -104,8 +104,8 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
         self.leaderboardTableView?.reloadData()
-        self.minorLeagueController?.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
     }
 }
 
