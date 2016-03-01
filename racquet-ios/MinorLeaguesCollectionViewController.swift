@@ -5,9 +5,15 @@ import SwiftyJSON
 class MinorLeaguesCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     private let reuseIdentifier = "MinorLeaguesViewCell"
+    private let insetSize = CGFloat(50)
+    private let cellSize = CGFloat(50)
     private var minors :SwiftyJSON.JSON = []
-    //private var numberOfMinors = 4 // Int(UIScreen.mainScreen().bounds.width ))
-
+    private var numberOfMinors: Int
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.numberOfMinors = Int((UIScreen.mainScreen().bounds.width - (self.insetSize * 2)) / self.cellSize)
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +35,7 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //return minors.count < self.numberOfMinors ? minors.count : numberOfMinors
-        return minors.count
+        return minors.count < self.numberOfMinors ? minors.count : numberOfMinors
     }
     
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -39,8 +44,16 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
     
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         self.collectionView!.frame.size.width = size.width
+        self.numberOfMinors = Int((size.width - (self.insetSize*2)) / self.cellSize)
         self.collectionView!.reloadData()
-
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
+        return UIEdgeInsetsMake(0, self.insetSize, 0, self.insetSize)
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        return CGSizeMake(self.cellSize, self.cellSize)
     }
 
 }
