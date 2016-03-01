@@ -33,7 +33,6 @@
 		DE99C6CA54BFCBD9ED3A0E47 /* sample_feed_json.json in Resources */ = {isa = PBXBuildFile; fileRef = DE99CB0F92B9C008975C5431 /* sample_feed_json.json */; };
 		DE99C7726E7EA8DB0656B215 /* ClubCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */; };
 		DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CD03FB0216EEEB1A02FA /* AppDelegate.swift */; };
-		DE99CB1BDC88B64017AB98D2 /* racquet_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */; };
 		DE99CBF1612398C6BF20E911 /* RacquetRestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CE7479F72EB8A5177C2B /* RacquetRestService.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,7 +85,6 @@
 		DE99C45F02A42C7DFA161D81 /* racquet-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "racquet-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C4C482294213FBFF4069 /* racquet-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "racquet-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE99C6E03F5B864BA6EB9CC1 /* sample_club_json.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample_club_json.json; sourceTree = "<group>"; };
-		DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = racquet_iosTests.swift; sourceTree = "<group>"; };
 		DE99C9430B1C5BAD00BFD6C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CA5B3F1BD7CFEC78AE64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		DE99CAAC4540A61E3F2BB39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 			children = (
 				AEFF00171C7C14A5002485B0 /* FeedViewController.swift */,
 				AEFF001F1C7C29BF002485B0 /* ClubFeedViewCell.swift */,
-				AE6BD48E1C840FB3002A2259 /* RoundUIImageView.swift */,
 			);
 			name = Feed;
 			sourceTree = "<group>";
@@ -178,6 +175,16 @@
 				AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */,
 			);
 			name = Leaderboard;
+			sourceTree = "<group>";
+		};
+		AE868F531C853B4E00B449CF /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				DE99C6E03F5B864BA6EB9CC1 /* sample_club_json.json */,
+				DE99CB0F92B9C008975C5431 /* sample_feed_json.json */,
+				AE6BD48C1C83C9D8002A2259 /* sample_leaders_json.json */,
+			);
+			name = "Sample Data";
 			sourceTree = "<group>";
 		};
 		DE99C25F375C0686A52EB454 /* Products */ = {
@@ -224,6 +231,7 @@
 				AE6BD4881C83C0E7002A2259 /* Feed */,
 				AE6BD4891C83C0FA002A2259 /* Leaderboard */,
 				AEE067B71C7E7F1300B8DD66 /* MatchAddController.swift */,
+				AE6BD48E1C840FB3002A2259 /* RoundUIImageView.swift */,
 			);
 			path = "racquet-ios";
 			sourceTree = "<group>";
@@ -233,14 +241,11 @@
 			children = (
 				AEE067B31C7D3B8600B8DD66 /* FakeRacquetRestService.swift */,
 				AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */,
-				DE99CCC0DD7A69C9B351B58F /* Info.plist */,
-				DE99C7E5A3B1BC61406A779E /* racquet_iosTests.swift */,
-				DE99C6E03F5B864BA6EB9CC1 /* sample_club_json.json */,
-				DE99CB0F92B9C008975C5431 /* sample_feed_json.json */,
 				DE99C3EFC485AB9197317285 /* FeedViewControllerSpec.swift */,
 				AE6BD48A1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift */,
-				AE6BD48C1C83C9D8002A2259 /* sample_leaders_json.json */,
 				AE868F511C8521B000B449CF /* MinorLeaguesCollectionViewControllerSpec.swift */,
+				AE868F531C853B4E00B449CF /* Sample Data */,
+				DE99CCC0DD7A69C9B351B58F /* Info.plist */,
 			);
 			path = "racquet-iosTests";
 			sourceTree = "<group>";
@@ -506,7 +511,6 @@
 				AEE067B41C7D3B8600B8DD66 /* FakeRacquetRestService.swift in Sources */,
 				AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */,
 				AE6BD48B1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift in Sources */,
-				DE99CB1BDC88B64017AB98D2 /* racquet_iosTests.swift in Sources */,
 				DE99C4B54497A4D87E6BD03F /* FeedViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
