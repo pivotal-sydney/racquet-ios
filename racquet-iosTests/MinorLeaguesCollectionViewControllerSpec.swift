@@ -28,8 +28,11 @@ class MinorLeaguesCollectionViewControllerSpec: QuickSpec {
             }
             
             it("numberOfItemsInSection matches the minor count") {
-                let result = self.controller!.collectionView(self.controller!.collectionView!, numberOfItemsInSection: 1)
-                expect(result).to(equal(12))
+                let result = Int(self.controller!.collectionView(self.controller!.collectionView!, numberOfItemsInSection: 1))
+                let maxInRow = (Int((self.controller!.collectionView?.bounds.width)! - 100) / 50)
+                expect(result) <= maxInRow
+                expect(result) <= 12
+                expect(result).to(equal(maxInRow) || equal(12))
             }
 
             it("numberOfSectionsInCollectionView returns one") {
