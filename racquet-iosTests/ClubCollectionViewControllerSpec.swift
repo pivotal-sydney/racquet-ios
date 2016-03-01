@@ -1,8 +1,3 @@
-//
-// Created by pivotal on 2/23/16.
-// Copyright (c) 2016 Pivotal. All rights reserved.
-//
-
 import Foundation
 import Quick
 import Nimble
@@ -35,6 +30,11 @@ class ClubCollectionViewControllerSpec: QuickSpec {
             it("numberOfSectionsInCollectionView returns one") {
                 let result = controller!.numberOfSectionsInCollectionView(controller!.collectionView!)
                 expect(result).to(equal(1))
+            }
+            
+            it("sets club name on cell") {
+                let result = controller!.collectionView(controller!.collectionView!, cellForItemAtIndexPath: NSIndexPath(forRow: 0, inSection: 0)) as! ClubViewCell
+                expect(result.clubName.text).to(equal("test-name1"))
             }
         }
     }
