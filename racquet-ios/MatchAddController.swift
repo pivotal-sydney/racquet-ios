@@ -22,9 +22,6 @@ class MatchAddController: UIViewController {
 
     @IBAction func done(sender: AnyObject) {
         let service = RealRacquetRestService()
-        print(winner.text)
-        print(loser.text)
-        print(club["id"].int!)
         service.addMatch(club["id"].int!, winner: winner.text!, loser: loser.text!, callback: onAddMatch)
     }
     
