@@ -177,7 +177,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@winner" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83C-XY-YV8">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@winner" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83C-XY-YV8" customClass="MPGTextField_Swift" customModule="racquet_ios" customModuleProvider="target">
                                 <rect key="frame" x="60" y="230.5" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -214,7 +214,7 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@loser" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-Sf-slF">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="@loser" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-Sf-slF" customClass="MPGTextField_Swift" customModule="racquet_ios" customModuleProvider="target">
                                 <rect key="frame" x="60" y="340" width="480" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -231,6 +231,7 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                             <constraint firstItem="XST-iN-Ab1" firstAttribute="top" secondItem="83C-XY-YV8" secondAttribute="bottom" constant="30" id="Rsm-jW-fds"/>
                             <constraint firstItem="XST-iN-Ab1" firstAttribute="centerX" secondItem="hUG-Bb-EhL" secondAttribute="centerX" id="Ycf-Od-wdw"/>
                             <constraint firstItem="83C-XY-YV8" firstAttribute="leading" secondItem="hUG-Bb-EhL" secondAttribute="leadingMargin" constant="40" id="Yoy-GV-irL"/>
+                            <constraint firstItem="o5I-dC-R13" firstAttribute="top" secondItem="XST-iN-Ab1" secondAttribute="bottom" constant="290" id="hJZ-WX-oD3"/>
                             <constraint firstItem="XST-iN-Ab1" firstAttribute="centerY" secondItem="hUG-Bb-EhL" secondAttribute="centerY" id="iCG-LC-ZBH"/>
                             <constraint firstItem="OQU-q1-kAf" firstAttribute="centerX" secondItem="hUG-Bb-EhL" secondAttribute="centerX" id="iLv-c6-VGU"/>
                             <constraint firstItem="83C-XY-YV8" firstAttribute="top" secondItem="OQU-q1-kAf" secondAttribute="bottom" constant="10" id="jbI-Uo-WEe"/>
@@ -239,10 +240,15 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                             <constraint firstItem="83C-XY-YV8" firstAttribute="centerX" secondItem="hUG-Bb-EhL" secondAttribute="centerX" id="uEO-Uc-8F9"/>
                             <constraint firstItem="6NN-sr-bKI" firstAttribute="leading" secondItem="hUG-Bb-EhL" secondAttribute="leadingMargin" constant="-20" id="vMs-Ga-LkA"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hJZ-WX-oD3"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
-                        <outlet property="loser" destination="ooE-Sf-slF" id="ZOY-Hp-cg8"/>
-                        <outlet property="winner" destination="83C-XY-YV8" id="Ug1-8j-bbW"/>
+                        <outlet property="loser" destination="ooE-Sf-slF" id="ahj-Jo-aOe"/>
+                        <outlet property="winner" destination="83C-XY-YV8" id="Zda-9c-5pF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNr-vR-DMw" userLabel="First Responder" sceneMemberID="firstResponder"/>

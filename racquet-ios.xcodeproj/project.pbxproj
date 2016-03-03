@@ -16,6 +16,7 @@
 		AE6BD48D1C83C9D8002A2259 /* sample_leaders_json.json in Resources */ = {isa = PBXBuildFile; fileRef = AE6BD48C1C83C9D8002A2259 /* sample_leaders_json.json */; };
 		AE6BD48F1C840FB3002A2259 /* RoundUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BD48E1C840FB3002A2259 /* RoundUIImageView.swift */; };
 		AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */; };
+		AE8271051C87C0C400CDD846 /* MPGTextField-Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8271041C87C0C400CDD846 /* MPGTextField-Swift.swift */; };
 		AE868F521C8521B000B449CF /* MinorLeaguesCollectionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE868F511C8521B000B449CF /* MinorLeaguesCollectionViewControllerSpec.swift */; };
 		AEBB97921C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */; };
 		AEBB97941C7FD32A008AC058 /* MinorLeaguesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */; };
@@ -66,6 +67,7 @@
 		AE6BD48C1C83C9D8002A2259 /* sample_leaders_json.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample_leaders_json.json; sourceTree = "<group>"; };
 		AE6BD48E1C840FB3002A2259 /* RoundUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundUIImageView.swift; sourceTree = "<group>"; };
 		AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewControllerSpec.swift; sourceTree = "<group>"; };
+		AE8271041C87C0C400CDD846 /* MPGTextField-Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPGTextField-Swift.swift"; sourceTree = "<group>"; };
 		AE868F511C8521B000B449CF /* MinorLeaguesCollectionViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorLeaguesCollectionViewControllerSpec.swift; sourceTree = "<group>"; };
 		AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorLeaguesCollectionViewController.swift; sourceTree = "<group>"; };
 		AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorLeaguesViewCell.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				AE6BD4891C83C0FA002A2259 /* Leaderboard */,
 				AEE067B71C7E7F1300B8DD66 /* MatchAddController.swift */,
 				AE6BD48E1C840FB3002A2259 /* RoundUIImageView.swift */,
+				AE8271041C87C0C400CDD846 /* MPGTextField-Swift.swift */,
 			);
 			path = "racquet-ios";
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE8271051C87C0C400CDD846 /* MPGTextField-Swift.swift in Sources */,
 				AE6BD4861C83BFC9002A2259 /* ClubViewCell.swift in Sources */,
 				AE6BD48F1C840FB3002A2259 /* RoundUIImageView.swift in Sources */,
 				DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */,
