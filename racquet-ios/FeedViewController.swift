@@ -31,6 +31,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.progressIndicator.stopAnimating()
         if((response) != nil) {
             self.matches = response!
+            (self.tabBarController as? ClubTabViewController)?.feedDidLoad(response!)
             self.feedTableView.reloadData()
         }
     }

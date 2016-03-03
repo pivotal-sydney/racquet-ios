@@ -43,7 +43,7 @@ struct RealRacquetRestService : RacquetRestService {
             }
             if let value: AnyObject = response.result.value {
                 let responseObject = JSON(value)
-                debugPrint(responseObject)
+//                debugPrint(responseObject)
                 callback(response: responseObject, success: true)
             }
         }
