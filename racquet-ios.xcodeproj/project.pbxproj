@@ -323,6 +323,11 @@
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Pivotal;
+				TargetAttributes = {
+					DE99CC484B32C07ED433167B = {
+						DevelopmentTeam = F6659896WG;
+					};
+				};
 			};
 			buildConfigurationList = DE99CA270EA8AEBFC6036922 /* Build configuration list for PBXProject "racquet-ios" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -666,6 +671,7 @@
 			baseConfigurationReference = 9D41C1996B0E1530862A814A /* Pods-racquet-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "racquet-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pivotal.racquet-ios";
@@ -705,6 +711,7 @@
 			baseConfigurationReference = 0ADC6462F3D89A9A6257BBE6 /* Pods-racquet-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "racquet-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pivotal.racquet-ios";
