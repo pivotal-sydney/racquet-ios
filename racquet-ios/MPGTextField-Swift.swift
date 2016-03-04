@@ -8,18 +8,24 @@
 
 import UIKit
 
-@objc protocol MPGTextFieldDelegate{
-    func dataForPopoverInTextField(textfield: MPGTextField_Swift) -> [Dictionary<String, AnyObject>]
+struct MPGTextFieldData {
+    let title: String
+    let detail: String
+    let imageURLString: String?
+}
+
+protocol MPGTextFieldDelegate{
+    func dataForPopoverInTextField(textfield: MPGTextField_Swift) -> [MPGTextFieldData]
     
-    optional func textFieldDidEndEditing(textField: MPGTextField_Swift, withSelection data: Dictionary<String,AnyObject>)
-    optional func textFieldShouldSelect(textField: MPGTextField_Swift) -> Bool
+    func textFieldDidEndEditing(textField: MPGTextField_Swift, withSelection data: MPGTextFieldData)
+    func textFieldShouldSelect(textField: MPGTextField_Swift) -> Bool
 }
 
 class MPGTextField_Swift: UITextField, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource, UIGestureRecognizerDelegate {
     
     var mDelegate : MPGTextFieldDelegate?
     var tableViewController : UITableViewController?
-    var data = [Dictionary<String, AnyObject>]()
+    var data = [MPGTextFieldData]()
     
     //Set this to override the default color of suggestions popover. The default color is [UIColor colorWithWhite:0.8 alpha:0.9]
     @IBInspectable var popoverBackgroundColor : UIColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 1.0)
@@ -36,7 +42,7 @@ class MPGTextField_Swift: UITextField, UITextFieldDelegate, UITableViewDelegate,
         // Initialization code
     }
     
-    required init?(coder aDecoder: NSCoder!){
+    required init?(coder aDecoder: NSCoder){
         super.init(coder: aDecoder)
     }
     
@@ -74,6 +80,7 @@ class MPGTextField_Swift: UITextField, UITextFieldDelegate, UITableViewDelegate,
         }
     }
     
+    
     override func resignFirstResponder() -> Bool{
         if (self.tableViewController != nil) {
         UIView.animateWithDuration(0.3,
@@ -94,7 +101,7 @@ class MPGTextField_Swift: UITextField, UITextFieldDelegate, UITableViewDelegate,
     
     func provideSuggestions(){
         if let tvc = self.tableViewController {
-            tableViewController!.tableView.reloadData()
+            tvc.tableView.reloadData()
         }
         else if self.applyFilterWithSearchQuery(self.text!).count > 0{
             //Add a tap gesture recogniser to dismiss the suggestions view when the user taps outside the suggestions view
@@ -109,6 +116,9 @@ class MPGTextField_Swift: UITextField, UITextFieldDelegate, UITableViewDelegate,
             self.tableViewController!.tableView.dataSource = self
             self.tableViewController!.tableView.backgroundColor = self.popoverBackgroundColor
             self.tableViewController!.tableView.separatorColor = self.seperatorColor
+            self.tableViewController!.tableView.registerNib(UINib(nibName: "PlayerTableCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "cell")
+            self.tableViewController!.tableView.rowHeight = UITableViewAutomaticDimension
+            self.tableViewController!.tableView.estimatedRowHeight = 70
             if let frameSize = self.popoverSize{
                 self.tableViewController!.tableView.frame = frameSize
             }
@@ -147,8 +157,8 @@ class MPGTextField_Swift: UITextField, UITextFieldDelegate, UITableViewDelegate,
         }
     }
     
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int{
-        var count = self.applyFilterWithSearchQuery(self.text!).count
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        let count = self.applyFilterWithSearchQuery(self.text!).count
         if count == 0{
             UIView.animateWithDuration(0.3,
                 animations: ({
@@ -166,27 +176,21 @@ class MPGTextField_Swift: UITextField, UITextFieldDelegate, UITableViewDelegate,
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("MPGResultsCell") as UITableViewCell!
-        
-        if (cell == nil){
-            cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: "MPGResultsCell")
-        }
-        
-        cell!.backgroundColor = UIColor.clearColor()
-        let dataForRowAtIndexPath = self.applyFilterWithSearchQuery(self.text!)[indexPath.row]
-        let displayText : AnyObject? = dataForRowAtIndexPath["DisplayText"]
-        let displaySubText : AnyObject? = dataForRowAtIndexPath["DisplaySubText"]
-        cell!.textLabel!.text = displayText as! String
-        cell!.detailTextLabel!.text = displaySubText as! String
-        
-        return cell!
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! PlayerTableCell
+
+        cell.backgroundColor = UIColor.clearColor()
+        let data = self.applyFilterWithSearchQuery(self.text!)[indexPath.row]
+        cell.playerLabel!.text = data.title
+        cell.twitterLabel!.text = data.detail
+        cell.playerImage.hnk_setImageFromURL(NSURL(string: data.imageURLString!)!, placeholder: UIImage(named: "mini-racquet"))
+
+        return cell
     }
     
-    func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!){
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         let filtered = self.applyFilterWithSearchQuery(self.text!)
         let selectedRow = filtered[indexPath.row]
-        let displayText : AnyObject? = selectedRow["DisplayText"]
-        self.text = displayText as! String
+        self.text = selectedRow.detail
         print(self.text)
         self.resignFirstResponder()
     }
@@ -194,19 +198,11 @@ class MPGTextField_Swift: UITextField, UITextFieldDelegate, UITableViewDelegate,
     
     //   #pragma mark Filter Method
     
-    func applyFilterWithSearchQuery(filter : String) -> [Dictionary<String, AnyObject>]
+    func applyFilterWithSearchQuery(filter : String) -> [MPGTextFieldData]
     {
-        //let predicate = NSPredicate(format: "DisplayText BEGINSWITH[cd] \(filter)")
-        var lower = (filter as NSString).lowercaseString
-        var filteredData = data.filter({
-            if let match : AnyObject  = $0["DisplayText"]{
-                //println("LCS = \(filter.lowercaseString)")
-                return (match as! NSString).lowercaseString.hasPrefix((filter as NSString).lowercaseString)
-            }
-            else{
-                return false
-            }
-        })
+        let filteredData = data.filter {
+            return $0.title.lowercaseString.containsString(filter.lowercaseString) || $0.detail.lowercaseString.containsString(filter.lowercaseString)
+        }
         return filteredData
     }
     
@@ -214,21 +210,18 @@ class MPGTextField_Swift: UITextField, UITextFieldDelegate, UITableViewDelegate,
         if let table = self.tableViewController{
             table.tableView.removeFromSuperview()
         }
-        if ((mDelegate?.textFieldShouldSelect?(self)) == true){
-            if self.applyFilterWithSearchQuery(self.text!).count > 0 {
-                let selectedData = self.applyFilterWithSearchQuery(self.text!)[0]
-                let displayText : AnyObject? = selectedData["DisplayText"]
-                self.text = displayText as! String
-                mDelegate?.textFieldDidEndEditing?(self, withSelection: selectedData)
-            }
-            else{
-                mDelegate?.textFieldDidEndEditing?(self, withSelection: ["DisplayText":self.text!, "CustomObject":"NEW"])
-            }
+        if self.applyFilterWithSearchQuery(self.text!).count > 0 {
+            let selectedData = self.applyFilterWithSearchQuery(self.text!)[0]
+            self.text = selectedData.detail
+            mDelegate?.textFieldDidEndEditing(self, withSelection: selectedData)
         }
-        
-    }
-    
+        else{
+            mDelegate?.textFieldDidEndEditing(self, withSelection: MPGTextFieldData(title: self.text!, detail: "", imageURLString: nil))
+        }
 
-    
-    
+    }
+
+
+
+
 }

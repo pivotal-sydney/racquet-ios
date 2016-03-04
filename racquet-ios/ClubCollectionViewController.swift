@@ -8,7 +8,7 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
 
     private let reuseIdentifier = "ClubViewCell"
     var clubs: SwiftyJSON.JSON = nil
-    let minSquareSize = CGFloat(125)
+    let minSquareSize = CGFloat(100)
     var gridSize:Int
     
     required init?(coder aDecoder: NSCoder) {
@@ -56,7 +56,7 @@ class ClubCollectionViewController: UICollectionViewController, UICollectionView
         return 1
     }
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let size = Int((collectionView.frame.size.width - CGFloat(gridSize - 1)) / CGFloat(gridSize));
+        let size = Int((collectionView.bounds.size.width - CGFloat(gridSize - 1)) / CGFloat(gridSize));
         return CGSize(width: size, height: size)
     }
     

@@ -17,6 +17,10 @@
 		AE6BD48F1C840FB3002A2259 /* RoundUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BD48E1C840FB3002A2259 /* RoundUIImageView.swift */; };
 		AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */; };
 		AE8271051C87C0C400CDD846 /* MPGTextField-Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8271041C87C0C400CDD846 /* MPGTextField-Swift.swift */; };
+		AE8271071C880C1700CDD846 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8271061C880C1700CDD846 /* Player.swift */; };
+		AE82710E1C88177F00CDD846 /* PlayerTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE82710C1C88177F00CDD846 /* PlayerTableCell.swift */; };
+		AE82710F1C88177F00CDD846 /* PlayerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE82710D1C88177F00CDD846 /* PlayerTableCell.xib */; };
+		AE8271111C88FA0E00CDD846 /* MPGTextFieldSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8271101C88FA0E00CDD846 /* MPGTextFieldSpec.swift */; };
 		AE868F521C8521B000B449CF /* MinorLeaguesCollectionViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE868F511C8521B000B449CF /* MinorLeaguesCollectionViewControllerSpec.swift */; };
 		AEBB97921C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */; };
 		AEBB97941C7FD32A008AC058 /* MinorLeaguesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */; };
@@ -68,6 +72,10 @@
 		AE6BD48E1C840FB3002A2259 /* RoundUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundUIImageView.swift; sourceTree = "<group>"; };
 		AE6D86B21C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubCollectionViewControllerSpec.swift; sourceTree = "<group>"; };
 		AE8271041C87C0C400CDD846 /* MPGTextField-Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPGTextField-Swift.swift"; sourceTree = "<group>"; };
+		AE8271061C880C1700CDD846 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		AE82710C1C88177F00CDD846 /* PlayerTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableCell.swift; sourceTree = "<group>"; };
+		AE82710D1C88177F00CDD846 /* PlayerTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerTableCell.xib; sourceTree = "<group>"; };
+		AE8271101C88FA0E00CDD846 /* MPGTextFieldSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPGTextFieldSpec.swift; sourceTree = "<group>"; };
 		AE868F511C8521B000B449CF /* MinorLeaguesCollectionViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorLeaguesCollectionViewControllerSpec.swift; sourceTree = "<group>"; };
 		AEBB97911C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorLeaguesCollectionViewController.swift; sourceTree = "<group>"; };
 		AEBB97931C7FD32A008AC058 /* MinorLeaguesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinorLeaguesViewCell.swift; sourceTree = "<group>"; };
@@ -235,6 +243,9 @@
 				AEE067B71C7E7F1300B8DD66 /* MatchAddController.swift */,
 				AE6BD48E1C840FB3002A2259 /* RoundUIImageView.swift */,
 				AE8271041C87C0C400CDD846 /* MPGTextField-Swift.swift */,
+				AE8271061C880C1700CDD846 /* Player.swift */,
+				AE82710C1C88177F00CDD846 /* PlayerTableCell.swift */,
+				AE82710D1C88177F00CDD846 /* PlayerTableCell.xib */,
 			);
 			path = "racquet-ios";
 			sourceTree = "<group>";
@@ -247,6 +258,7 @@
 				DE99C3EFC485AB9197317285 /* FeedViewControllerSpec.swift */,
 				AE6BD48A1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift */,
 				AE868F511C8521B000B449CF /* MinorLeaguesCollectionViewControllerSpec.swift */,
+				AE8271101C88FA0E00CDD846 /* MPGTextFieldSpec.swift */,
 				AE868F531C853B4E00B449CF /* Sample Data */,
 				DE99CCC0DD7A69C9B351B58F /* Info.plist */,
 			);
@@ -369,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE99C1DB8AE57FDCB9AE0510 /* Assets.xcassets in Resources */,
+				AE82710F1C88177F00CDD846 /* PlayerTableCell.xib in Resources */,
 				DE99C599F4179A4E0CE73D13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,6 +528,7 @@
 				AE6D86B31C7C1496001C7E96 /* ClubCollectionViewControllerSpec.swift in Sources */,
 				AE6BD48B1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift in Sources */,
 				DE99C4B54497A4D87E6BD03F /* FeedViewControllerSpec.swift in Sources */,
+				AE8271111C88FA0E00CDD846 /* MPGTextFieldSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,9 +537,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE8271051C87C0C400CDD846 /* MPGTextField-Swift.swift in Sources */,
+				AE82710E1C88177F00CDD846 /* PlayerTableCell.swift in Sources */,
 				AE6BD4861C83BFC9002A2259 /* ClubViewCell.swift in Sources */,
 				AE6BD48F1C840FB3002A2259 /* RoundUIImageView.swift in Sources */,
 				DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */,
+				AE8271071C880C1700CDD846 /* Player.swift in Sources */,
 				AEFF00161C7C1336002485B0 /* ClubTabViewController.swift in Sources */,
 				AE1FCECA1C7EB71000CA6119 /* LeaderboardMajorViewCell.swift in Sources */,
 				AEFF00181C7C14A5002485B0 /* FeedViewController.swift in Sources */,

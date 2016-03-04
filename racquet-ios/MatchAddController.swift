@@ -17,11 +17,18 @@ class MatchAddController: UIViewController, MPGTextFieldDelegate {
     @IBOutlet weak var winner: MPGTextField_Swift!
     @IBOutlet weak var loser: MPGTextField_Swift!
     
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    @IBOutlet weak var loserTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var winnerTopConstraint: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardNotification:", name: UIKeyboardWillChangeFrameNotification, object: nil)
         winner.mDelegate = self
         loser.mDelegate = self
+        
+        winner.keyboardType = UIKeyboardType.Twitter
+        loser.keyboardType = UIKeyboardType.Twitter
     }
     
     @IBAction func cancel(sender: AnyObject) {
@@ -43,34 +50,35 @@ class MatchAddController: UIViewController, MPGTextFieldDelegate {
         }
     }
     
-    func dataForPopoverInTextField(textfield: MPGTextField_Swift) -> [Dictionary<String, AnyObject>]
+    func dataForPopoverInTextField(textfield: MPGTextField_Swift) -> [MPGTextFieldData]
     {
-        var sampleData = [Dictionary<String, AnyObject>]()
-        let players = getPlayersFromFeed()
-        for player in players {
-            let dictionary = ["DisplayText": player,"DisplaySubText": "email","CustomObject": "content"]
-            sampleData.append(dictionary)
+        return getPlayersFromFeed().map { player in
+            MPGTextFieldData(title: player.name, detail: player.twitter_handle, imageURLString: player.image_url)
         }
-        return sampleData
     }
 
     func textFieldShouldSelect(textField: MPGTextField_Swift) -> Bool{
         return false
     }
     
-    func textFieldDidEndEditing(textField: MPGTextField_Swift, withSelection data: Dictionary<String,AnyObject>){
-        print("Dictionary received = \(data)")
+    func textFieldDidEndEditing(textField: MPGTextField_Swift, withSelection data: MPGTextFieldData){
+        print("Dictionary received = \(data.title)")
     }
 
     
-    func getPlayersFromFeed() -> [String] {
-        var data = Set<String>()
+    func getPlayersFromFeed() -> [Player] {
+        var data = Set<Player>()
         for match in self.feed {
-            data.insert(match.1["winner"]["twitter_handle"].string!)
-            data.insert(match.1["loser"]["twitter_handle"].string!)
+            let winner = match.1["winner"]
+            data.insert(Player(name: winner["name"].string!, twitter_handle: winner["twitter_handle"].string!, image_url: winner["profile_image_url"].string!))
+
+            let loser = match.1["loser"]
+            data.insert(Player(name: loser["name"].string!, twitter_handle: loser["twitter_handle"].string!, image_url: loser["profile_image_url"].string!))
         }
         
-        return Array(data.sort())
+        return Array(data.sort({ (lhs: Player, rhs: Player) -> Bool in
+            return lhs.name < rhs.name
+        }))
     }
     
     
@@ -81,10 +89,23 @@ class MatchAddController: UIViewController, MPGTextFieldDelegate {
             let animationCurveRawNSN = userInfo[UIKeyboardAnimationCurveUserInfoKey] as? NSNumber
             let animationCurveRaw = animationCurveRawNSN?.unsignedLongValue ?? UIViewAnimationOptions.CurveEaseInOut.rawValue
             let animationCurve:UIViewAnimationOptions = UIViewAnimationOptions(rawValue: animationCurveRaw)
+            
+            if winner.isFirstResponder() {
+                NSLayoutConstraint.activateConstraints([self.winnerTopConstraint])
+                NSLayoutConstraint.deactivateConstraints([self.loserTopConstraint])
+            }
+            
+            if loser.isFirstResponder() {
+                NSLayoutConstraint.activateConstraints([self.loserTopConstraint])
+                NSLayoutConstraint.deactivateConstraints([self.winnerTopConstraint])
+            }
+            
             if endFrame?.origin.y >= UIScreen.mainScreen().bounds.size.height {
-                //self.keyboardHeightLayoutConstraint?.constant = 0.0
+                self.bottomConstraint?.constant = 0.0
             } else {
-                //self.keyboardHeightLayoutConstraint?.constant = endFrame?.size.height ?? 0.0
+                let height = (endFrame?.size.height)!
+                print(endFrame?.size.height)
+                self.bottomConstraint?.constant = height ?? 0.0
             }
             UIView.animateWithDuration(duration,
                 delay: NSTimeInterval(0),
