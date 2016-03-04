@@ -44,12 +44,5 @@ class FeedViewControllerSpec: QuickSpec {
                 expect(result).to(equal(1))
             }
         }
-
-        describe("on load") {
-            it("should populate club name") {
-                controller!.viewDidLoad()
-                expect(controller!.clubName.text).to(equal("club-name"))
-            }
-        }
     }
 }

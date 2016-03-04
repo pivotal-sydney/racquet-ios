@@ -52,13 +52,5 @@ class LeaderboardViewControllerSpec: QuickSpec {
             expect(cell.playerImage.frame.width) > 0
             }
         }
-        
-        describe("on load") {
-            it("should populate club name") {
-                controller!.viewDidLoad()
-                expect(controller!.clubName.text).to(equal("club-name"))
-            }
-        }
-
     }
 }
