@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		389BC3AF1C89A27300F92715 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389BC3AE1C89A27300F92715 /* ClubsViewController.swift */; };
 		5DA514C041D54C4E801286B4 /* Pods_racquet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61B6DBFB3AF0A229BBDE9DF /* Pods_racquet_ios.framework */; };
 		815D3FF9BB919C90083B0E03 /* Pods_racquet_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */; };
 		AE1FCECA1C7EB71000CA6119 /* LeaderboardMajorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */; };
@@ -56,6 +57,7 @@
 		0ADC6462F3D89A9A6257BBE6 /* Pods-racquet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		16D267F79786A975CBE6BDCA /* Pods-racquet-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosTests/Pods-racquet-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		33AB2556AFDA3A390FED2776 /* Pods-racquet-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		389BC3AE1C89A27300F92715 /* ClubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
 		8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D41C1996B0E1530862A814A /* Pods-racquet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.release.xcconfig"; sourceTree = "<group>"; };
 		AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardMajorViewCell.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		AE6BD4871C83C0C6002A2259 /* Clubs */ = {
 			isa = PBXGroup;
 			children = (
+				389BC3AE1C89A27300F92715 /* ClubsViewController.swift */,
 				DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */,
 				AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */,
 			);
@@ -518,6 +521,7 @@
 			files = (
 				AE6BD4861C83BFC9002A2259 /* ClubViewCell.swift in Sources */,
 				AE6BD48F1C840FB3002A2259 /* RoundUIImageView.swift in Sources */,
+				389BC3AF1C89A27300F92715 /* ClubsViewController.swift in Sources */,
 				DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */,
 				AEFF00161C7C1336002485B0 /* ClubTabViewController.swift in Sources */,
 				AE1FCECA1C7EB71000CA6119 /* LeaderboardMajorViewCell.swift in Sources */,
