@@ -10,7 +10,7 @@
         <!--Mini Racquet-->
         <scene sceneID="Oqp-a0-DmO">
             <objects>
-                <viewController title="Mini Racquet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qp6-AM-Fqj" sceneMemberID="viewController">
+                <viewController title="Mini Racquet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qp6-AM-Fqj" customClass="ClubsViewController" customModule="racquet_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vzf-wu-u2J"/>
                         <viewControllerLayoutGuide type="bottom" id="PgL-eF-Aiw"/>
@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Established Clubs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rao-c0-9Gk">
-                                <rect key="frame" x="20" y="150" width="560" height="35"/>
+                                <rect key="frame" x="20" y="5" width="560" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="dUZ-xd-ky2"/>
                                 </constraints>
@@ -29,38 +29,17 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yQ-jf-cas">
-                                <rect key="frame" x="0.0" y="185" width="600" height="351"/>
+                                <rect key="frame" x="0.0" y="40" width="600" height="496"/>
                                 <connections>
                                     <segue destination="28W-t5-qny" kind="embed" id="q9W-gV-afw"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6gB-DC-9fI">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="150"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mini-racquet" translatesAutoresizingMaskIntoConstraints="NO" id="Utd-yP-Hfg">
-                                        <rect key="frame" x="250" y="25" width="100" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="Kkl-s9-pww"/>
-                                            <constraint firstAttribute="width" constant="100" id="YqN-CB-h0q"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" red="0.4039215686" green="0.67450980390000004" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Utd-yP-Hfg" firstAttribute="centerY" secondItem="6gB-DC-9fI" secondAttribute="centerY" id="3pt-cK-8Vf"/>
-                                    <constraint firstAttribute="height" constant="150" id="8o6-EZ-Pgu"/>
-                                    <constraint firstItem="Utd-yP-Hfg" firstAttribute="centerX" secondItem="6gB-DC-9fI" secondAttribute="centerX" id="STo-TS-RRA"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6gB-DC-9fI" firstAttribute="top" secondItem="vzf-wu-u2J" secondAttribute="bottom" id="3eD-Zi-SvS"/>
-                            <constraint firstItem="6gB-DC-9fI" firstAttribute="width" secondItem="ukT-uK-tXj" secondAttribute="width" id="8AY-7o-hQT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rao-c0-9Gk" secondAttribute="trailing" id="92T-rU-ST0"/>
-                            <constraint firstItem="rao-c0-9Gk" firstAttribute="top" secondItem="6gB-DC-9fI" secondAttribute="bottom" id="96G-VZ-4O9"/>
+                            <constraint firstItem="0yQ-jf-cas" firstAttribute="top" secondItem="vzf-wu-u2J" secondAttribute="bottom" constant="40" id="NXU-AD-kgR"/>
                             <constraint firstItem="PgL-eF-Aiw" firstAttribute="top" secondItem="0yQ-jf-cas" secondAttribute="bottom" id="OgX-56-H2Z"/>
-                            <constraint firstItem="6gB-DC-9fI" firstAttribute="centerX" secondItem="ukT-uK-tXj" secondAttribute="centerX" id="Z1D-5e-DmN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0yQ-jf-cas" secondAttribute="trailing" constant="-20" id="cdk-HF-DRA"/>
                             <constraint firstItem="rao-c0-9Gk" firstAttribute="leading" secondItem="ukT-uK-tXj" secondAttribute="leadingMargin" id="dVN-F7-wv1"/>
                             <constraint firstItem="0yQ-jf-cas" firstAttribute="leading" secondItem="ukT-uK-tXj" secondAttribute="leadingMargin" constant="-20" id="kts-62-hfF"/>
@@ -80,7 +59,7 @@
             <objects>
                 <collectionViewController storyboardIdentifier="ClubCollectionViewController" id="28W-t5-qny" customClass="ClubCollectionViewController" customModule="racquet_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="iNL-D2-Q98">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="351"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="496"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.85490196078431369" green="0.92549019607843142" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="HMr-U7-9zJ">
@@ -90,7 +69,7 @@
                             <inset key="sectionInset" minX="0.0" minY="1" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <activityIndicatorView key="backgroundView" hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" id="DI3-Wb-yzB">
-                            <rect key="frame" x="282" y="157" width="37" height="37"/>
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="496"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="color" red="0.4039215686" green="0.67450980390000004" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                         </activityIndicatorView>
@@ -471,7 +450,7 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                         <viewControllerLayoutGuide type="bottom" id="hA3-UC-Ukj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="htD-KQ-2uQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="351"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="496"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xb-CB-dWj">
@@ -482,7 +461,7 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="paa-7Z-KL8">
-                                <rect key="frame" x="20" y="0.0" width="560" height="302"/>
+                                <rect key="frame" x="20" y="0.0" width="560" height="447"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="DDP-53-Xy2" customClass="ClubFeedViewCell" customModule="racquet_ios" customModuleProvider="target">
@@ -655,7 +634,7 @@ Qm9vbSEREQ1SZWNvcmQgYSBuZXcgbWF0Y2ggcmVzdWx0A
                                 </connections>
                             </tableView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qtn-Rv-jHO">
-                                <rect key="frame" x="282" y="132" width="37" height="37"/>
+                                <rect key="frame" x="282" y="205" width="37" height="37"/>
                                 <color key="color" red="0.4039215686" green="0.67450980390000004" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
