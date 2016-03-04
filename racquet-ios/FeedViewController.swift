@@ -4,7 +4,6 @@ import SwiftyJSON
 import Haneke
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var clubName: UILabel!
     @IBOutlet weak var feedTableView: UITableView!
 
     var matches: SwiftyJSON.JSON = nil
@@ -18,8 +17,6 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.feedTableView.addSubview(self.refreshControl)
-
-        clubName.text = (self.tabBarController as? ClubTabViewController)?.club["name"].string!
     }
 
     func loadData(service: RacquetRestService = RealRacquetRestService()) {

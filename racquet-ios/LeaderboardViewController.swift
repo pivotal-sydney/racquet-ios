@@ -5,7 +5,6 @@ import Haneke
 
 class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var clubName: UILabel!
     @IBOutlet weak var leaderboardTableView: UITableView!
     @IBOutlet weak var minorLeagueView: UIView!
     
@@ -24,7 +23,6 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
 
         self.leaderboardTableView.reloadData()
 
-        clubName.text = (self.tabBarController as? ClubTabViewController)?.club["name"].string!
         loadData()
     }
    

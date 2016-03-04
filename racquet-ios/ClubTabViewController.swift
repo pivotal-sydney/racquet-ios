@@ -20,4 +20,8 @@ class ClubTabViewController: UITabBarController {
             (segue.destinationViewController as! MatchAddController).club = club
         }
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.title = club["name"].string!
+    }
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5DA514C041D54C4E801286B4 /* Pods_racquet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61B6DBFB3AF0A229BBDE9DF /* Pods_racquet_ios.framework */; };
 		815D3FF9BB919C90083B0E03 /* Pods_racquet_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */; };
-		AE1FCEC61C7E6EEA00CA6119 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */; };
 		AE1FCECA1C7EB71000CA6119 /* LeaderboardMajorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */; };
 		AE6BD4861C83BFC9002A2259 /* ClubViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */; };
 		AE6BD48B1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BD48A1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift */; };
@@ -59,7 +58,6 @@
 		33AB2556AFDA3A390FED2776 /* Pods-racquet-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D41C1996B0E1530862A814A /* Pods-racquet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.release.xcconfig"; sourceTree = "<group>"; };
-		AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
 		AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardMajorViewCell.swift; sourceTree = "<group>"; };
 		AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubViewCell.swift; sourceTree = "<group>"; };
 		AE6BD48A1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewControllerSpec.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 		AE6BD4871C83C0C6002A2259 /* Clubs */ = {
 			isa = PBXGroup;
 			children = (
-				AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */,
 				DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */,
 				AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */,
 			);
@@ -530,7 +527,6 @@
 				AEBB97921C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift in Sources */,
 				DE99C7726E7EA8DB0656B215 /* ClubCollectionViewController.swift in Sources */,
 				AEE067B81C7E7F1300B8DD66 /* MatchAddController.swift in Sources */,
-				AE1FCEC61C7E6EEA00CA6119 /* ClubsViewController.swift in Sources */,
 				DE99CBF1612398C6BF20E911 /* RacquetRestService.swift in Sources */,
 				AEBB97941C7FD32A008AC058 /* MinorLeaguesViewCell.swift in Sources */,
 			);
