@@ -34,4 +34,8 @@ class ClubTabViewController: UITabBarController {
             self.matchAddController!.feed = self.feed
         }
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.title = club["name"].string!
+    }
 }

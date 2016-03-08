@@ -5,7 +5,6 @@ import Haneke
 
 class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var clubName: UILabel!
     @IBOutlet weak var leaderboardTableView: UITableView!
     @IBOutlet weak var minorLeagueView: UIView!
     
@@ -21,16 +20,10 @@ class LeaderboardViewController: UIViewController, UITableViewDelegate, UITableV
         self.refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
         self.refreshControl.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
         self.leaderboardTableView.addSubview(self.refreshControl)
-        
 
-       self.leaderboardTableView.reloadData()
+        self.leaderboardTableView.reloadData()
 
-        clubName.text = (self.tabBarController as? ClubTabViewController)?.club["name"].string!
-        
         loadData()
-        
-        
-
     }
    
     func loadData(service: RacquetRestService = RealRacquetRestService()) {

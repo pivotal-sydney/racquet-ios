@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		389BC3AF1C89A27300F92715 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389BC3AE1C89A27300F92715 /* ClubsViewController.swift */; };
 		5DA514C041D54C4E801286B4 /* Pods_racquet_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F61B6DBFB3AF0A229BBDE9DF /* Pods_racquet_ios.framework */; };
 		815D3FF9BB919C90083B0E03 /* Pods_racquet_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */; };
-		AE1FCEC61C7E6EEA00CA6119 /* ClubsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */; };
 		AE1FCECA1C7EB71000CA6119 /* LeaderboardMajorViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */; };
 		AE6BD4861C83BFC9002A2259 /* ClubViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */; };
 		AE6BD48B1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6BD48A1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift */; };
@@ -58,9 +58,9 @@
 		0ADC6462F3D89A9A6257BBE6 /* Pods-racquet-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		16D267F79786A975CBE6BDCA /* Pods-racquet-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosTests/Pods-racquet-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		33AB2556AFDA3A390FED2776 /* Pods-racquet-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-iosUITests/Pods-racquet-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		389BC3AE1C89A27300F92715 /* ClubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
 		8EE0AA9B0170237122A53D2B /* Pods_racquet_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_racquet_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D41C1996B0E1530862A814A /* Pods-racquet-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-racquet-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-racquet-ios/Pods-racquet-ios.release.xcconfig"; sourceTree = "<group>"; };
-		AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubsViewController.swift; sourceTree = "<group>"; };
 		AE1FCEC91C7EB71000CA6119 /* LeaderboardMajorViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardMajorViewCell.swift; sourceTree = "<group>"; };
 		AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubViewCell.swift; sourceTree = "<group>"; };
 		AE6BD48A1C83C5C8002A2259 /* LeaderboardViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewControllerSpec.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		AE6BD4871C83C0C6002A2259 /* Clubs */ = {
 			isa = PBXGroup;
 			children = (
-				AE1FCEC51C7E6EEA00CA6119 /* ClubsViewController.swift */,
+				389BC3AE1C89A27300F92715 /* ClubsViewController.swift */,
 				DE99C284FD9D822559D45006 /* ClubCollectionViewController.swift */,
 				AE6BD4851C83BFC9002A2259 /* ClubViewCell.swift */,
 			);
@@ -326,6 +326,11 @@
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Pivotal;
+				TargetAttributes = {
+					DE99CC484B32C07ED433167B = {
+						DevelopmentTeam = F6659896WG;
+					};
+				};
 			};
 			buildConfigurationList = DE99CA270EA8AEBFC6036922 /* Build configuration list for PBXProject "racquet-ios" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -525,6 +530,7 @@
 				AE8271051C87C0C400CDD846 /* MPGTextField-Swift.swift in Sources */,
 				AE6BD4861C83BFC9002A2259 /* ClubViewCell.swift in Sources */,
 				AE6BD48F1C840FB3002A2259 /* RoundUIImageView.swift in Sources */,
+				389BC3AF1C89A27300F92715 /* ClubsViewController.swift in Sources */,
 				DE99C8AAE9E7B1B3C6D3364B /* AppDelegate.swift in Sources */,
 				AEFF00161C7C1336002485B0 /* ClubTabViewController.swift in Sources */,
 				AE1FCECA1C7EB71000CA6119 /* LeaderboardMajorViewCell.swift in Sources */,
@@ -534,7 +540,6 @@
 				AEBB97921C7FD175008AC058 /* MinorLeaguesCollectionViewController.swift in Sources */,
 				DE99C7726E7EA8DB0656B215 /* ClubCollectionViewController.swift in Sources */,
 				AEE067B81C7E7F1300B8DD66 /* MatchAddController.swift in Sources */,
-				AE1FCEC61C7E6EEA00CA6119 /* ClubsViewController.swift in Sources */,
 				DE99CBF1612398C6BF20E911 /* RacquetRestService.swift in Sources */,
 				AEBB97941C7FD32A008AC058 /* MinorLeaguesViewCell.swift in Sources */,
 			);
@@ -598,7 +603,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -670,6 +675,7 @@
 			baseConfigurationReference = 9D41C1996B0E1530862A814A /* Pods-racquet-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "racquet-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pivotal.racquet-ios";
@@ -709,6 +715,7 @@
 			baseConfigurationReference = 0ADC6462F3D89A9A6257BBE6 /* Pods-racquet-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "racquet-ios/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "io.pivotal.racquet-ios";

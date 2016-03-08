@@ -56,6 +56,4 @@ class MinorLeaguesCollectionViewController: UICollectionViewController, UICollec
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
         return CGSizeMake(self.cellSize, self.cellSize)
     }
-    
-
 }

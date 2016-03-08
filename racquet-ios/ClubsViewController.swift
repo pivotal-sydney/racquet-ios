@@ -10,14 +10,14 @@ import UIKit
 
 
 class ClubsViewController: UIViewController {
-    override func viewWillDisappear(animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: animated);
-        super.viewWillDisappear(animated)
-    }
     
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        let image = UIImage(named: "mini-racquet.png")
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .ScaleAspectFit
+        imageView.image = image
+        self.navigationItem.titleView = imageView
     }
     
 }
