@@ -17,8 +17,7 @@ class ClubTabViewController: UITabBarController {
     var matchAddController: MatchAddController?
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "add_match")
-        {
+        if (segue.identifier == "add_match") {
             self.matchAddController = (segue.destinationViewController as! MatchAddController)
             (segue.destinationViewController as! MatchAddController).club = club
             
