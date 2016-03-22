@@ -5,6 +5,6 @@ rvm:
 before_install:
   - gem install cocoapods --pre
   - pod repo update --silent
+  - gem install xcpretty
 script:
- - xctool -scheme racquet-ios -sdk iphonesimulator -workspace racquet-ios.xcworkspace ONLY_ACTIVE_ARCH=NO
- - xctool test -scheme racquet-ios -sdk iphonesimulator -workspace racquet-ios.xcworkspace ONLY_ACTIVE_ARCH=NO
+ - set -o pipefail && xcodebuild -scheme racquet-ios -sdk iphonesimulator -workspace racquet-ios.xcworkspace -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' ONLY_ACTIVE_ARCH=NO clean test | xcpretty -tc
